@@ -1,25 +1,25 @@
 // Использование модулей SASS
-@use "sass:math";
+@use 'sass:math';
 // Использование модулей SASS
 // ======================================МИКСИНЫ==============================================
-@import "mixins";
+@import 'mixins';
 
 // ======================================МИКСИНЫ==============================================
-
-// @import "../../node_modules/bootstrap/scss/bootstrap";
-// @import "reset";
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'reset';
 // ======================================ШРИФТЫ===============================================
 
 // &display=swap&subset=cyrillic-ext
-@import "fonts";
+@import 'fonts';
 
 // ======================================ШРИФТЫ===============================================
 // ======================================ИКОНОЧНЫЙ ШРИФТ======================================
-@import "icons";
+@import 'icons';
 // ======================================ИКОНОЧНЫЙ ШРИФТ======================================
 
 // Шрифт по умолчанию
-$fontfamily: "Gilroy";
+$fontfamily: 'Unbounded';
+$font-sf: 'SFUIDisplay';
 // Шрифт по умолчанию
 
 // ПЕРЕМЕННЫЕ
@@ -36,11 +36,9 @@ $md3: 991.98px;
 $md4: 767.98px;
 $md5: 575.98px;
 
-$text: #242424;
-$accent: #f0a721;
+$text: #303030;
+$accent: #b0cb1f;
 $secondary: #d4cd8e;
-
-$header: var(--header-height, 195px);
 
 // ПЕРЕМЕННЫЕ
 
@@ -82,28 +80,18 @@ body {
 
 //=================Подключаем файлы стилей
 //================Общий файл для элементов страницы
-@import "ui";
-@import "forms";
+@import 'ui';
+@import 'forms';
 //================Общий файл для элементов страницы
-@import "header";
-@import "footer";
+@import 'header';
+@import 'footer';
 //=======================================
 
 // =======================ОСНОВНОЙ БЛОК==================
 .page {
 	flex: 1 1 auto;
 	overflow-x: clip;
-	@media (min-width: $md2) {
-		@media (min-height: 1260px) {
-			margin-bottom: 1260px;
-			position: relative;
-			z-index: 3;
-			background: #fff;
-		}
-	}
 }
 // =======================ОСНОВНОЙ БЛОК===================
 
-@import "pages/home";
-@import "pages/project";
-@import "pages/order";
+@import 'pages/home';

@@ -1,5 +1,5 @@
 %ic {
-	font-family: "icons";
+	font-family: 'icons';
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -10,71 +10,68 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
 	&:before {
 		@extend %ic;
 		display: block;
 	}
 }
 
-.icon-share:before {
-	content: "\e913";
-}
-.icon-question-mark:before {
-	content: "\e912";
-}
 .icon-arrow:before {
-	content: "\e900";
-}
-.icon-camera:before {
-	content: "\e901";
+	content: '\e900';
 }
 .icon-check:before {
-	content: "\e902";
+	content: '\e901';
 }
-.icon-check-circle:before {
-	content: "\e903";
+.icon-chevron:before {
+	content: '\e902';
 }
 .icon-close:before {
-	content: "\e904";
+	content: '\e903';
 }
 .icon-compare:before {
-	content: "\e905";
+	content: '\e904';
 }
-.icon-download:before {
-	content: "\e906";
+.icon-filter:before {
+	content: '\e905';
 }
-.icon-edit:before {
-	content: "\e907";
+.icon-heart:before {
+	content: '\e906';
 }
-.icon-favorite:before {
-	content: "\e908";
+.icon-instagram:before {
+	content: '\e907';
 }
-.icon-map:before {
-	content: "\e909";
+.icon-mobile:before {
+	content: '\e908';
 }
-.icon-marker:before {
-	content: "\e90a";
+.icon-play:before {
+	content: '\e909';
 }
-.icon-phone:before {
-	content: "\e90b";
+.icon-plus:before {
+	content: '\e90a';
 }
-.icon-question:before {
-	content: "\e90c";
+.icon-print:before {
+	content: '\e90b';
 }
 .icon-search:before {
-	content: "\e90d";
+	content: '\e90c';
+}
+.icon-share:before {
+	content: '\e90d';
+}
+.icon-sort:before {
+	content: '\e90e';
 }
 .icon-telegram:before {
-	content: "\e90e";
+	content: '\e90f';
 }
-.icon-vk:before {
-	content: "\e90f";
+.icon-user:before {
+	content: '\e910';
 }
 .icon-whatsapp:before {
-	content: "\e910";
+	content: '\e911';
 }
 .icon-youtube:before {
-	content: "\e911";
+	content: '\e912';
 }

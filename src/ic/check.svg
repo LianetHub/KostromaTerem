@@ -1,3 +1,39 @@
-<svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M32 2.0957L13.2466 20.8491L2 9.5957" stroke="#84A12F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="34"
+   height="23"
+   viewBox="0 0 34 23"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="check.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="51.347826"
+     inkscape:cx="17.001693"
+     inkscape:cy="11.5"
+     inkscape:window-width="3440"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     style="color:#000000;fill:#84a12f;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
+     d="M 32,0.59570312 A 1.5,1.5 0 0 0 30.939453,1.0351562 L 13.246094,18.728516 3.0605469,8.5351563 a 1.5,1.5 0 0 0 -2.12109377,0 1.5,1.5 0 0 0 0,2.1210937 L 12.185547,21.910156 a 1.50015,1.50015 0 0 0 2.121094,0 L 33.060547,3.15625 a 1.5,1.5 0 0 0 0,-2.1210938 A 1.5,1.5 0 0 0 32,0.59570312 Z"
+     id="path1" />
 </svg>
