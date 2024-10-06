@@ -257,107 +257,179 @@ $(function () {
 
     // sliders
 
-    if ($('.completed-projects__slider').length > 0) {
-        $('.completed-projects__slider').slick({
-            infinite: false,
-            variableWidth: true,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 576,
-                    settings: {
-                        variableWidth: false,
-                        slidesToShow: 1,
-                    }
-                }
-            ]
-        });
+    // if ($('.completed-projects__slider').length > 0) {
+    //     $('.completed-projects__slider').slick({
+    //         infinite: false,
+    //         variableWidth: true,
+    //         arrows: false,
+    //         responsive: [
+    //             {
+    //                 breakpoint: 576,
+    //                 settings: {
+    //                     variableWidth: false,
+    //                     slidesToShow: 1,
+    //                 }
+    //             }
+    //         ]
+    //     });
 
+    // }
+
+
+    class CustomSlider {
+        constructor(sliderSelector, options = {}) {
+            this.slider = $(sliderSelector);
+            this.slides = this.slider.find(options.slideSelector);
+            this.prevBtn = $(options.prevBtn);
+            this.nextBtn = $(options.nextBtn);
+
+            this.currentIndex = options.currentIndex || 0;
+            this.slideMargin = options.slideMargin || 0;
+            this.slideWidth = this.calculateSlideWidth();
+            this.onSlideChangeCallback = options.onSlideChange || (() => { });
+
+            this.init();
+        }
+
+        calculateSlideWidth() {
+            const windowWidth = $(window).width();
+            if (windowWidth < 768) {
+                return 300;
+            } else if (windowWidth < 1024) {
+                return 400;
+            } else {
+                return 500;
+            }
+        }
+
+        updateSlides() {
+            this.slides.removeClass('active');
+            this.slides.eq(this.currentIndex).addClass('active');
+            const offset = -(this.currentIndex * (this.slideWidth + this.slideMargin));
+            this.slider.css('transform', `translate3d(${offset}px, 0, 0)`);
+            this.slider.css('margin-left', `-${this.slideMargin / 2}px`);
+            this.onSlideChangeCallback(this);
+        }
+
+        init() {
+            this.slides.css('margin', `0 ${this.slideMargin / 2}px`);
+            this.slides.css('margin', `0 ${this.slideMargin / 2}px`);
+            this.nextBtn.on('click', () => this.nextSlide());
+            this.prevBtn.on('click', () => this.prevSlide());
+            $(window).on('resize', () => {
+                this.slideWidth = this.calculateSlideWidth();
+                this.updateSlides();
+            });
+            this.slides.on('click', (e) => this.slideToClickedSlide(e));
+            this.updateSlides();
+        }
+
+        nextSlide() {
+            this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+            this.updateSlides();
+        }
+
+        prevSlide() {
+            this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+            this.updateSlides();
+        }
+
+        slideToClickedSlide(event) {
+            const clickedIndex = this.slides.index($(event.currentTarget));
+            if (clickedIndex !== this.currentIndex) {
+                this.currentIndex = clickedIndex;
+                this.updateSlides();
+            }
+        }
+
+        onSlideChange() {
+            return this.currentIndex;
+        }
     }
+
+
 
     if ($('.projects__slider').length > 0) {
-        $('.projects__slider').slick({
-            infinite: false,
-            variableWidth: true,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 576,
-                    settings: {
-                        variableWidth: false,
-                        slidesToShow: 1,
-                    }
-                }
-            ]
-        });
+        new CustomSlider('.projects__slider', {
+            slideSelector: '.projects__slide',
+            prevBtn: '.projects__prev',
+            nextBtn: '.projects__next',
+            currentIndex: 1,
+            slideMargin: 20,
+            onSlideChange: (slider) => {
 
-    }
-
-    if ($('.projects__item-slider').length > 0) {
-
-        $('.projects__item-slider').each(function () {
-
-            $(this).on('init', function (e) {
-                let $slider = $(e.target)
-                let slides = $slider.find('.projects__item-slide');
-
-                if (slides.length > 0) {
-                    getSlickMouseNavbar($slider, slides.length)
-                }
-
-            })
-
-            $(this).slick({
-                infinite: false,
-                variableWidth: true,
-                arrows: false,
-                dots: true,
-
-                swipe: false
-            });
-
-
-            function getSlickMouseNavbar($slider, quantity) {
-
-                $slider.on('mousemove', function (event) {
-
-                    if (event.target.closest('.slick-dots')) {
-                        return;
-                    }
-
-
-
-                    let sliderWidth = $slider.width();
-                    let mouseX = event.pageX - $slider.offset().left;
-
-                    let areaWidth = sliderWidth / quantity;
-                    let index = Math.floor(mouseX / areaWidth);
-
-                    $slider.slick('slickSetOption', 'speed', 0, true);
-                    $slider.slick('slickGoTo', index);
-
-                    setTimeout(function () {
-                        $slider.slick('slickSetOption', 'speed', 300, true);
-                    }, 0);
-                });
+                $('.projects__info').hide();
+                $('.projects__info').eq(slider.currentIndex).show();
             }
-
-        })
-
+        });
     }
+
+
+    // if ($('.projects__item-slider').length > 0) {
+
+    //     $('.projects__item-slider').each(function () {
+
+    //         $(this).on('init', function (e) {
+    //             let $slider = $(e.target)
+    //             let slides = $slider.find('.projects__item-slide');
+
+    //             if (slides.length > 0) {
+    //                 getSlickMouseNavbar($slider, slides.length)
+    //             }
+
+    //         })
+
+    //         $(this).slick({
+    //             infinite: false,
+    //             variableWidth: true,
+    //             arrows: false,
+    //             dots: true,
+
+    //             swipe: false
+    //         });
+
+
+    //         function getSlickMouseNavbar($slider, quantity) {
+
+    //             $slider.on('mousemove', function (event) {
+
+    //                 if (event.target.closest('.slick-dots')) {
+    //                     return;
+    //                 }
+
+
+
+    //                 let sliderWidth = $slider.width();
+    //                 let mouseX = event.pageX - $slider.offset().left;
+
+    //                 let areaWidth = sliderWidth / quantity;
+    //                 let index = Math.floor(mouseX / areaWidth);
+
+    //                 $slider.slick('slickSetOption', 'speed', 0, true);
+    //                 $slider.slick('slickGoTo', index);
+
+    //                 setTimeout(function () {
+    //                     $slider.slick('slickSetOption', 'speed', 300, true);
+    //                 }, 0);
+    //             });
+    //         }
+
+    //     })
+
+    // }
 
 
     // header height
 
-    // getHeaderHeight();
+    getHeaderHeight();
 
-    // function getHeaderHeight() {
-    //     const headerHeight = $('.header').outerHeight();
-    //     $("body").css('--header-height', headerHeight + "px");
-    //     return headerHeight;
-    // }
+    function getHeaderHeight() {
+        const headerHeight = $('.header').outerHeight();
+        $("body").css('--header-height', headerHeight + "px");
+        return headerHeight;
+    }
 
-    // window.addEventListener('resize', () => getHeaderHeight());
+    window.addEventListener('resize', () => getHeaderHeight());
 
 
     $(window).on('scroll', function () {

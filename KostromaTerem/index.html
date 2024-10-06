@@ -38,106 +38,103 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__main d-flex">
-                    <a href="/" class="header__logo">
-                        <picture>
-                            <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип">
-                        </picture>
-                    </a>
-                    <div class="header__actions d-flex">
-                        <div role="search" class="header__search">
-                            <span role="button" class="header__search-btn icon-search"></span>
-                            <input type="text" name="" class="form-control" placeholder="Что вы ищите?">
-                        </div>
-                        <a href="" class="header__action icon-heart">
-                            <span class="header__action-quantity">2</span>
+                <div class="header__wrapper">
+                    <div class="header__main d-flex align-items-center">
+                        <a href="/" class="header__logo">
+                            <picture>
+                                <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип">
+                            </picture>
                         </a>
-                        <a href="" class="header__action icon-compare">
-                            <span class="header__action-quantity">2</span>
-                        </a>
-                    </div>
-                    <span role="button" aria-label="Открыть меню" class="header__menu-btn icon-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                    <div class="header__contacts d-flex">
-                        <a href="" class="header__whatsapp icon-whatsapp"></a>
-                        <div class="header__contacts-block">
-                            <a href="tel:89103731880" class="header__contacts-link">8 (910) 373 18 80</a>
-                            <a href="mailto:info@costroma-terem.ru" class="header__contacts-link">info@costroma-terem.ru</a>
+                        <div class="header__actions d-flex">
+                            <div role="search" class="header__search">
+                                <span role="button" class="header__search-btn icon-search"></span>
+                                <input type="text" name="" class="header__search-input" placeholder="Что вы ищите?">
+                            </div>
+                            <a href="" class="header__action icon-heart">
+                                <span class="header__action-quantity">2</span>
+                            </a>
+                            <a href="" class="header__action icon-compare">
+                                <span class="header__action-quantity">2</span>
+                            </a>
                         </div>
-                    </div>
-                    <a href="" class="header__contacts-feedback btn btn-primary icon-arrow"> Получить консультацию </a>
-                </div>
-                <div class="header__menu menu d-flex">
-                    <nav class="menu__body">
-                        <ul class="menu__list d-flex flex-wrap">
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">О компании</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Проекты</a>
-                                <span role="button" class="menu__arrow icon-chevron"></span>
-                                <ul class="submenu">
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Строительство</a>
-                                <span role="button" class="menu__arrow icon-chevron"></span>
-                                <ul class="submenu">
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Материалы</a>
-                                <span role="button" class="menu__arrow icon-chevron"></span>
-                                <ul class="submenu">
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Отзывы</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Клиентам</a>
-                                <span role="button" class="menu__arrow icon-chevron"></span>
-                                <ul class="submenu">
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Галерея</a>
-                                <span role="button" class="menu__arrow icon-chevron"></span>
-                                <ul class="submenu">
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="menu__contacts d-flex flex-column">
-                        <div class="menu__contacts-row">
-                            <a href="" class="menu__contacts-whatsapp icon-whatsapp"></a>
-                            <a href="tel:89103731880" class="menu__contacts-link">8 (910) 373 18 80</a>
+                        <span role="button" aria-label="Открыть меню" class="header__menu-btn icon-menu rounded">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <div class="header__contacts d-flex">
+                            <a href="" class="header__whatsapp icon-whatsapp"></a>
+                            <div class="header__contacts-block d-flex flex-md-column rounded">
+                                <a href="tel:89103731880" class="header__contacts-link">8 (910) 373 18 80</a>
+                                <a href="mailto:info@costroma-terem.ru" class="header__contacts-link sm-link">info@costroma-terem.ru</a>
+                            </div>
                         </div>
-                        <a href="mailto:Info@mail.ru" class="menu__contacts-link">Info@mail.ru</a>
+                        <a href="" class="header__contacts-feedback btn btn-primary icon-arrow"> Получить консультацию </a>
+                    </div>
+                    <div class="header__menu menu d-flex justify-content-between rounded-sm">
+                        <nav class="menu__body">
+                            <ul class="menu__list d-flex flex-wrap">
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">О компании</a>
+                                </li>
+                                <li class="menu__item">
+                                    <span role="button" class="menu__link icon-chevron">Проекты</span>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <span role="button" class="menu__link icon-chevron">Строительство</span>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <span role="button" class="menu__link icon-chevron">Материалы</span>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Отзывы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <span role="button" class="menu__link icon-chevron">Клиентам</span>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <span role="button" class="menu__link icon-chevron">Галерея</span>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                        <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu__contacts d-flex flex-column align-items-end">
+                            <div class="menu__contacts-row d-flex">
+                                <a href="" class="menu__contacts-whatsapp icon-whatsapp"></a>
+                                <a href="tel:89103731880" class="menu__contacts-link">8 (910) 373 18 80</a>
+                            </div>
+                            <a href="mailto:Info@mail.ru" class="menu__contacts-link">Info@mail.ru</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,11 +142,12 @@
         <main class="page">
             <section class="promo">
                 <div class="container">
-                    <div class="row">
-                        <h1 class="promo__title title-lg"> Производство и строительство деревянных домов под ключ </h1>
-                        <div class="promo__side">
-                            <a href="" class="promo__side-link icon-arrow d-flex flex-column"> Узнать подробнее </a>
-                            <a href="" class="promo__side-link icon-arrow d-flex flex-column"> Смотреть проекты </a>
+                    <div class="promo__main rounded-md d-flex align-items-end">
+                        <h1 class="promo__title title-lg"> Производство <span>и строительство</span> деревянных домов <span>под ключ</span>
+                        </h1>
+                        <div class="promo__side d-flex ml-auto">
+                            <a href="" class="promo__side-link icon-arrow d-flex flex-column-reverse justify-content-between rounded-sm"> Узнать подробнее </a>
+                            <a href="" class="promo__side-link icon-arrow d-flex flex-column-reverse justify-content-between rounded-sm"> Смотреть проекты </a>
                         </div>
                     </div>
                 </div>
@@ -158,53 +156,55 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-8">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="benefits__card d-flex flex-column h-100 rounded-md">
-                                        <div class="benefits__card-icon">
-                                            <img src="img/icons/options.svg" alt="Иконка">
+                            <div class="benefits__cards">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="benefits__card d-flex flex-column h-100 rounded-md">
+                                            <div class="benefits__card-icon">
+                                                <img src="img/icons/options.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__card-text"> Собственное производство полного&nbsp;цикла </div>
                                         </div>
-                                        <div class="benefits__card-text"> Собственное производство полного цикла </div>
                                     </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="benefits__card d-flex flex-column h-100 rounded-md">
-                                        <div class="benefits__card-icon">
-                                            <img src="img/icons/worker.svg" alt="Иконка">
+                                    <div class="col-4">
+                                        <div class="benefits__card d-flex flex-column h-100 rounded-md">
+                                            <div class="benefits__card-icon">
+                                                <img src="img/icons/worker.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__card-text"> Квалифицированные бригады <br> мастеров </div>
                                         </div>
-                                        <div class="benefits__card-text"> Квалифицированные бригады мастеров </div>
                                     </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="benefits__card d-flex flex-column h-100 rounded-md">
-                                        <div class="benefits__card-icon">
-                                            <img src="img/icons/air-conditioner.svg" alt="Иконка">
+                                    <div class="col-4">
+                                        <div class="benefits__card d-flex flex-column h-100 rounded-md">
+                                            <div class="benefits__card-icon">
+                                                <img src="img/icons/air-conditioner.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__card-text"> Строим <br> под ключ <br> круглый&nbsp;год </div>
                                         </div>
-                                        <div class="benefits__card-text"> Строим под ключ круглый год </div>
                                     </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="benefits__card d-flex flex-column h-100 rounded-md">
-                                        <div class="benefits__card-icon">
-                                            <img src="img/icons/research-center.svg" alt="Иконка">
+                                    <div class="col-5">
+                                        <div class="benefits__card d-flex flex-column h-100 rounded-md">
+                                            <div class="benefits__card-icon">
+                                                <img src="img/icons/research-center.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__card-text"> Используем новейшие <br> технологии в строительстве с&nbsp;соблюдением традиций </div>
                                         </div>
-                                        <div class="benefits__card-text"> Используем новейшие технологии в строительстве с соблюдением традиций </div>
                                     </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="benefits__card d-flex flex-column h-100 rounded-md">
-                                        <div class="benefits__card-icon">
-                                            <img src="img/icons/environmental.svg" alt="Иконка">
+                                    <div class="col-4">
+                                        <div class="benefits__card d-flex flex-column h-100 rounded-md">
+                                            <div class="benefits__card-icon">
+                                                <img src="img/icons/environmental.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__card-text"> Проектирование, индивидуальный подходк заказчику </div>
                                         </div>
-                                        <div class="benefits__card-text"> Проектирование, индивидуальный подходк заказчику </div>
                                     </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="benefits__card d-flex flex-column h-100 rounded-md">
-                                        <div class="benefits__card-icon">
-                                            <img src="img/icons/wealth.svg" alt="Иконка">
+                                    <div class="col-3">
+                                        <div class="benefits__card d-flex flex-column h-100 rounded-md">
+                                            <div class="benefits__card-icon">
+                                                <img src="img/icons/wealth.svg" alt="Иконка">
+                                            </div>
+                                            <div class="benefits__card-text"> Гарантия качества </div>
                                         </div>
-                                        <div class="benefits__card-text"> Гарантия качества </div>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +212,7 @@
                         <div class="col-4">
                             <div class="benefits__image">
                                 <picture>
-                                    <source srcset="img/benefits.webp" type="image/webp"><img src="img/benefits.png" alt="Фото проекта">
+                                    <source srcset="img/example.webp" type="image/webp"><img src="img/example.jpg" class="rounded-md" alt="Фото проекта">
                                 </picture>
                             </div>
                         </div>
@@ -223,13 +223,14 @@
                 <div class="container">
                     <div class="categories__header d-flex">
                         <div class="categories__header-caption caption">[ Категории домов ]</div>
-                        <h2 class="categories__header-title title"> Строим дома и бани из бруса и бревна «под ключ» </h2>
+                        <h2 class="categories__header-title title"> Строим дома и бани из <span>бруса и бревна «под ключ»</span>
+                        </h2>
                     </div>
                     <div class="categories__body">
                         <div class="row">
                             <div class="col-6">
                                 <a href="" class="project d-flex flex-column">
-                                    <span class="project__image">
+                                    <span class="project__image rounded-md">
                                         <picture>
                                             <source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.jpg" class="cover-image" alt="Фото проекта">
                                         </picture>
@@ -241,7 +242,7 @@
                             </div>
                             <div class="col-6">
                                 <a href="" class="project d-flex flex-column">
-                                    <span class="project__image">
+                                    <span class="project__image rounded-md">
                                         <picture>
                                             <source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.jpg" class="cover-image" alt="Фото проекта">
                                         </picture>
@@ -253,7 +254,7 @@
                             </div>
                             <div class="col-6">
                                 <a href="" class="project d-flex flex-column">
-                                    <span class="project__image">
+                                    <span class="project__image rounded-md">
                                         <picture>
                                             <source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.jpg" class="cover-image" alt="Фото проекта">
                                         </picture>
@@ -265,7 +266,7 @@
                             </div>
                             <div class="col-6">
                                 <a href="" class="project d-flex flex-column">
-                                    <span class="project__image">
+                                    <span class="project__image rounded-md">
                                         <picture>
                                             <source srcset="img/projects/04.webp" type="image/webp"><img src="img/projects/04.jpg" class="cover-image" alt="Фото проекта">
                                         </picture>
@@ -281,26 +282,116 @@
             </section>
             <section class="projects">
                 <div class="container">
-                    <div class="projects__header d-flex">
-                        <div class="projects__caption">[ популярные проекты ]</div>
-                        <h2 class="projects__title title"> Мы собрали для вас популярные проекты </h2>
-                        <div class="projects__controls">
-                            <span role="button" class="projects__prev icon-arrow"></span>
-                            <span role="button" class="projects__next icon-arrow"></span>
+                    <div class="projects__header d-flex ">
+                        <div class="projects__caption caption">[ популярные проекты ]</div>
+                        <h2 class="projects__title title"> Мы собрали для вас <span>популярные проекты</span>
+                        </h2>
+                        <div class="projects__controls d-flex align-self-end">
+                            <span role="button" class="projects__prev slick-prev"></span>
+                            <span role="button" class="projects__next slick-next"></span>
                         </div>
                     </div>
                     <div class="projects__body">
                         <div class="projects__slider">
-                            <div class="projects__slide">
+                            <div class="projects__slide rounded-md">
                                 <picture>
-                                    <source srcset="img/projects/04.webp" type="image/webp"><img src="img/projects/04.jpg" class="cover-image" alt="project">
+                                    <source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.jpg" class="cover-image rounded-md" alt="project">
                                 </picture>
-                                <div class="projects__info">
-                                    <div class="projects__info-title">Проект дома ДБ-185</div>
-                                    <div class="projects__info-props">[ 6x8 Размеры дома ] [ 86.5 м2 площадь дома ]</div>
-                                    <div class="projects__info-price">895 000 ₽</div>
-                                    <a href="" class="projects__info-btn btn btn-primary icon-arrow"> Подробнее </a>
+                            </div>
+                            <div class="projects__slide rounded-md">
+                                <picture>
+                                    <source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.jpg" class="cover-image rounded-md" alt="project">
+                                </picture>
+                            </div>
+                            <div class="projects__slide rounded-md">
+                                <picture>
+                                    <source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.jpg" class="cover-image rounded-md" alt="project">
+                                </picture>
+                            </div>
+                            <div class="projects__slide rounded-md">
+                                <picture>
+                                    <source srcset="img/projects/04.webp" type="image/webp"><img src="img/projects/04.jpg" class="cover-image rounded-md" alt="project">
+                                </picture>
+                            </div>
+                            <div class="projects__slide rounded-md">
+                                <picture>
+                                    <source srcset="img/projects/05.webp" type="image/webp"><img src="img/projects/05.jpg" class="cover-image rounded-md" alt="project">
+                                </picture>
+                            </div>
+                            <div class="projects__slide rounded-md">
+                                <picture>
+                                    <source srcset="img/projects/06.webp" type="image/webp"><img src="img/projects/06.jpg" class="cover-image rounded-md" alt="project">
+                                </picture>
+                            </div>
+                            <div class="projects__slide rounded-md">
+                                <picture>
+                                    <source srcset="img/projects/07.webp" type="image/webp"><img src="img/projects/07.jpg" class="cover-image rounded-md" alt="project">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="projects__infos">
+                            <div class="projects__info">
+                                <div class="projects__info-title">Проект дома ДБ-185</div>
+                                <div class="projects__info-props d-flex flex-wrap">
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">6x8</span> Размеры дома ] </div>
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">86.5 м²</span> площадь дома ] </div>
                                 </div>
+                                <div class="projects__info-price">895 000 ₽</div>
+                                <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                            </div>
+                            <div class="projects__info">
+                                <div class="projects__info-title">Проект дома ДБ-200</div>
+                                <div class="projects__info-props d-flex flex-wrap">
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">7x9</span> Размеры дома ] </div>
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">100.0 м²</span> площадь дома ] </div>
+                                </div>
+                                <div class="projects__info-price">1 050 000 ₽</div>
+                                <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                            </div>
+                            <div class="projects__info">
+                                <div class="projects__info-title">Проект дома ДБ-220</div>
+                                <div class="projects__info-props d-flex flex-wrap">
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">8x10</span> Размеры дома ] </div>
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">120.0 м²</span> площадь дома ] </div>
+                                </div>
+                                <div class="projects__info-price">1 250 000 ₽</div>
+                                <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                            </div>
+                            <div class="projects__info">
+                                <div class="projects__info-title">Проект дома ДБ-240</div>
+                                <div class="projects__info-props d-flex flex-wrap">
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">9x11</span> Размеры дома ] </div>
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">140.0 м²</span> площадь дома ] </div>
+                                </div>
+                                <div class="projects__info-price">1 500 000 ₽</div>
+                                <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                            </div>
+                            <div class="projects__info">
+                                <div class="projects__info-title">Проект дома ДБ-260</div>
+                                <div class="projects__info-props d-flex flex-wrap">
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">10x12</span> Размеры дома ] </div>
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">160.0 м²</span> площадь дома ] </div>
+                                </div>
+                                <div class="projects__info-price">1 800 000 ₽</div>
+                                <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                            </div>
+                            <div class="projects__info">
+                                <div class="projects__info-title">Проект дома ДБ-280</div>
+                                <div class="projects__info-props d-flex flex-wrap">
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">11x13</span> Размеры дома ] </div>
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">180.0 м²</span> площадь дома ] </div>
+                                </div>
+                                <div class="projects__info-price">2 100 000 ₽</div>
+                                <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                            </div>
+                            <div class="projects__info">
+                                <div class="projects__info-title">Проект дома ДБ-300</div>
+                                <div class="projects__info-props d-flex flex-wrap">
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">12x14</span> Размеры дома ] </div>
+                                    <div class="projects__info-prop"> [ <span class="font-weight-bolder">200.0 м²</span> площадь дома ] </div>
+                                </div>
+                                <div class="projects__info-price">2 500 000 ₽</div>
+                                <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -389,785 +480,8 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__feedback d-flex">
-                    <div class="footer__feedback-main">
-                        <h2 class="footer__feedback-title title"> Заказать обратный звонок </h2>
-                        <p class="mt-4">Оставьте свои контктные данные и наш специалист перезвонит Вам в течение 15-ти минут</p>
-                        <div role="form" class="footer__form">
-                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
-                            <input type="text" name="tel" class="form-control" placeholder="+ 7 (___)-___-__-__">
-                            <span role="button" class="btn btn-primary icon-arrow"> Заказать звонок </span>
-                            <div class="footer__form-privacy text-center"> Нажимая кнопку «Заказать обратный звонок», Вы даете согласие на обработку своих персональных данных. </div>
-                        </div>
-                    </div>
-                    <div class="footer__feedback-image">
-                        <picture>
-                            <source srcset="img/feedback.webp" type="image/webp"><img src="img/feedback.png" alt="Изображение дома">
-                        </picture>
-                    </div>
-                </div>
-                <div class="footer__contacts d-flex">
-                    <div class="footer__contacts-caption caption">[ Контакты ]</div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-name"> Сесин Евгений Владимирович </div>
-                                <a href="tel:89103731880" class="footer__card-link">8 (910) 373 18 80</a>
-                                <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-name"> Пантелеев Алексей Алексеевич </div>
-                                <a href="tel:89109225525" class="footer__card-link">8 (910) 922 55 25</a>
-                                <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-caption"> Юридический и фактический адрес </div>
-                                <address class="footer__card-address">Костромская область, г. Чухлома, ул. Доктора Малыгина д.7</address>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-caption"> Офис в Москве </div>
-                                <address class="footer__card-address">123423, Москва, ул. Народного ополчения, д. 34, стр. 1</address>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__bottom d-flex">
-                    <div class="footer__column d-flex flex-column">
-                        <a href="/" class="footer__logo">
-                            <picture>
-                                <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип">
-                            </picture>
-                        </a>
-                        <a href="" class="footer__prod">
-                            <img src="img/bobry.svg" alt="Бобры">
-                        </a>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="footer__menu">
-                                <div class="footer__menu-caption">Строительство</div>
-                                <nav class="footer__menu-nav">
-                                    <ul class="footer__menu-list row">
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Проектирование дома</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Усадка</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Сооружение фундамента</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Отделка</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Производство домкомплекта</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Обработка антисептиком</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Сборка на ускадку</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Теплый угол</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__menu">
-                                <div class="footer__menu-caption">Компания</div>
-                                <nav class="footer__menu-nav">
-                                    <ul class="footer__menu-list row">
-                                        <li class="footer__menu-item col-12"><a href="" class="footer__menu-link">Материалы</a></li>
-                                        <li class="footer__menu-item col-12"><a href="" class="footer__menu-link">Отзывы</a></li>
-                                        <li class="footer__menu-item col-12"><a href="" class="footer__menu-link">Клиентам </a></li>
-                                        <li class="footer__menu-item col-12"><a href="" class="footer__menu-link">Контакты</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__menu">
-                                <div class="footer__menu-caption">Соц. сети</div>
-                                <div class="footer__socials socials ">
-                                    <a href="" class="socials__item icon-whatsapp"></a>
-                                    <a href="" class="socials__item icon-telegram"></a>
-                                    <a href="" class="socials__item icon-instagram"></a>
-                                    <a href="" class="socials__item icon-youtube"></a>
-                                </div>
-                                <a href="" class="footer__menu-rate">
-                                    <picture>
-                                        <source srcset="img/yandex-rate.webp" type="image/webp"><img src="img/yandex-rate.png" alt="Рейтинг в Яндексе">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
-    <div id="callback" class="popup">
-        <div role="form" class="popup__form form d-flex flex-column">
-            <h2 class="form__title title"> Оставьте ваш номер телефона </h2>
-            <p class="form__subtitle"> Мы свяжемся с вами и ответим на все вопросы </p>
-            <input type="tel" name="phone" class="form-control mt-lg-4 mt-2" placeholder="Номер телефона">
-            <div class="form__footer mt-lg-4 mt-3 d-flex flex-md-row flex-column align-items-md-center flex-lg-nowrap flex-md-wrap">
-                <span role="button" class="btn btn-secondary"> Отправить заявку <span class="btn__icon icon-check"></span>
-                </span>
-                <p class="form__footer-privacy">нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
-            </div>
-        </div>
-    </div>
-    <div id="succes-send" class="popup succes">
-        <div class="succes__header d-flex align-items-center flex-wrap">
-            <div class="succes__header-main">
-                <h2 class="succes__title title"> Мы вам скоро перезвоним </h2>
-                <p class="succes__subtitle"> Получили вашу заявку и позвоним вам в рабочее время по номеру </p>
-            </div>
-            <div class="succes__header-icon">
-                <img src="img/icons/check.svg" alt="Иконка">
-            </div>
-        </div>
-        <span role="button" data-fancybox-close class="succes__btn">Отлично!</span>
-    </div>
-    <div id="config" class="popup popup-lg">
-        <div class="order-more">
-            <div class="order__options d-flex flex-wrap">
-                <label class="order__option">
-                    <input type="radio" checked name="config" value="foundation" class="order__option-input hidden" hidden>
-                    <span class="order__option-btn"> Фундамент </span>
-                </label>
-                <label class="order__option">
-                    <input type="radio" name="config" value="roof" class="order__option-input hidden" hidden>
-                    <span class="order__option-btn"> Кровля </span>
-                </label>
-                <label class="order__option">
-                    <input type="radio" name="config" value="timber" class="order__option-input hidden" hidden>
-                    <span class="order__option-btn"> Брус </span>
-                </label>
-                <label class="order__option">
-                    <input type="radio" name="config" value="contour" class="order__option-input hidden" hidden>
-                    <span class="order__option-btn"> Тёплый контур </span>
-                </label>
-                <label class="order__option">
-                    <input type="radio" name="config" value="gas" class="order__option-input hidden" hidden>
-                    <span class="order__option-btn"> Газоснабжение </span>
-                </label>
-            </div>
-            <div class="order-more__tabs">
-                <div class="order-more__content active" id="foundation">
-                    <div class="order-more__cards">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-1.webp" type="image/webp"><img src="img/fund-1.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md">Сваи</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="piles" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-2.webp" type="image/webp"><img src="img/fund-2.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md">Монолитная плита</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
-                                        <li>Песчанная-гравийная подушка 300/ 100 мм</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="slab" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-more__btns d-md-block d-none">
-                        <div class="row">
-                            <div class="col-6">
-                                <span data-option="piles" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                            <div class="col-6">
-                                <span data-option="slab" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-more__content" id="roof">
-                    <div class="order-more__cards">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-1.webp" type="image/webp"><img src="img/fund-1.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md">Металочерепица</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="metaltiles" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-2.webp" type="image/webp"><img src="img/fund-2.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md">Мягкая кровля</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
-                                        <li>Песчанная-гравийная подушка 300/ 100 мм</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="soft" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-more__btns d-md-block d-none">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <span data-option="metaltiles" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                            <div class="col-md-6">
-                                <span data-option="soft" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-more__content" id="timber">
-                    <div class="order-more__cards">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-1.webp" type="image/webp"><img src="img/fund-1.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md"> Клееный брус 200 х 185 мм</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="glued" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-2.webp" type="image/webp"><img src="img/fund-2.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md">Высокий клееный брус 160 х 270 мм</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
-                                        <li>Песчанная-гравийная подушка 300/ 100 мм</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="high" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-1.webp" type="image/webp"><img src="img/fund-1.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md"> Профилированный брус камерной сушки 200 х 185 мм </div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
-                                        <li>Песчанная-гравийная подушка 300/ 100 мм</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                    </ul>
-                                    <span data-option="profiled" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-more__btns d-md-block d-none">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <span data-option="glued" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                            <div class="col-md-4">
-                                <span data-option="high" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                            <div class="col-md-4">
-                                <span data-option="profiled" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-more__content" id="contour">
-                    <div class="order-more__cards">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-image">
-                                        <picture>
-                                            <source srcset="img/fund-1.webp" type="image/webp"><img src="img/fund-1.png" alt="Фото фундамента">
-                                        </picture>
-                                    </div>
-                                    <div class="order-more__card-name title-md">Тёплый контур</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="contour-needed" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-more__btns d-md-block d-none">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <span data-option="contour-needed" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-more__content" id="gas">
-                    <div class="order-more__cards">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="order-more__card d-flex flex-column">
-                                    <div class="order-more__card-name title-md">Газоснабжение</div>
-                                    <ul class="order-more__card-list">
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                        <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
-                                        <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
-                                    </ul>
-                                    <span data-option="gas-needed" class="d-md-none mt-5 order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-more__btns d-md-block d-none">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <span data-option="gas-needed" class="order-more__card-btn btn btn-primary"> Выбрать <span class="btn__icon icon-check"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="floors" class="popup popup-md">
-        <div class="materials-desc">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="title-md"> Полы </h2>
-                    <ol class="materials-desc__list">
-                        <li> Черепной брусок 40х50 мм </li>
-                        <li> Лаги пола: доска 50х150/50х200 мм </li>
-                        <li> Черновой пол: доска 20х100 мм </li>
-                        <li> Утеплитель 100/150/200 мм </li>
-                    </ol>
-                </div>
-                <div class="col-md-6">
-                    <div class="materials-desc__image">
-                        <picture>
-                            <source srcset="img/materials-desc.webp" type="image/webp"><img src="img/materials-desc.png" alt="Изображение части">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="walls" class="popup popup-md">
-        <div class="materials-desc">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="title-md"> Наружные стены </h2>
-                    <ol class="materials-desc__list">
-                        <li> Черепной брусок 40х50 мм </li>
-                        <li> Лаги пола: доска 50х150/50х200 мм </li>
-                        <li> Черновой пол: доска 20х100 мм </li>
-                        <li> Утеплитель 100/150/200 мм </li>
-                    </ol>
-                </div>
-                <div class="col-md-6">
-                    <div class="materials-desc__image">
-                        <picture>
-                            <source srcset="img/materials-desc.webp" type="image/webp"><img src="img/materials-desc.png" alt="Изображение части">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="partitions" class="popup popup-md">
-        <div class="materials-desc">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="title-md"> Перегородки </h2>
-                    <ol class="materials-desc__list">
-                        <li> Черепной брусок 40х50 мм </li>
-                        <li> Лаги пола: доска 50х150/50х200 мм </li>
-                        <li> Черновой пол: доска 20х100 мм </li>
-                        <li> Утеплитель 100/150/200 мм </li>
-                    </ol>
-                </div>
-                <div class="col-md-6">
-                    <div class="materials-desc__image">
-                        <picture>
-                            <source srcset="img/materials-desc.webp" type="image/webp"><img src="img/materials-desc.png" alt="Изображение части">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="overlaps" class="popup popup-md">
-        <div class="materials-desc">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="title-md"> Перекрытия </h2>
-                    <ol class="materials-desc__list">
-                        <li> Черепной брусок 40х50 мм </li>
-                        <li> Лаги пола: доска 50х150/50х200 мм </li>
-                        <li> Черновой пол: доска 20х100 мм </li>
-                        <li> Утеплитель 100/150/200 мм </li>
-                    </ol>
-                </div>
-                <div class="col-md-6">
-                    <div class="materials-desc__image">
-                        <picture>
-                            <source srcset="img/materials-desc.webp" type="image/webp"><img src="img/materials-desc.png" alt="Изображение части">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="roofs" class="popup popup-md">
-        <div class="materials-desc">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="title-md"> Кровля </h2>
-                    <ol class="materials-desc__list">
-                        <li> Черепной брусок 40х50 мм </li>
-                        <li> Лаги пола: доска 50х150/50х200 мм </li>
-                        <li> Черновой пол: доска 20х100 мм </li>
-                        <li> Утеплитель 100/150/200 мм </li>
-                    </ol>
-                </div>
-                <div class="col-md-6">
-                    <div class="materials-desc__image">
-                        <picture>
-                            <source srcset="img/materials-desc.webp" type="image/webp"><img src="img/materials-desc.png" alt="Изображение части">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="quiz" class="popup">
-        <div class="quiz">
-            <h2 class="quiz__title title-xl">Укажите <br> пожелания к дому</h2>
-            <div class="quiz__main">
-                <div class="quiz__progressbar">
-                    <div class="quiz__progressbar-progress" style="--progress: 20%"></div>
-                    <div class="quiz__progressbar-info">
-                        <span class="quiz__progressbar-current">1</span> из <span class="quiz__progressbar-total">5</span>
-                    </div>
-                </div>
-                <div class="quiz__blocks">
-                    <div class="quiz__block active">
-                        <div class="quiz__block-header">
-                            <div class="quiz__block-caption title-md">Какая будет этажность?</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" checked name="floors-numbers" value="1" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 1 этаж </span>
-                                </label>
-                            </div>
-                            <div class="col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="floors-numbers" value="2" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 2 этажа </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quiz__block">
-                        <div class="quiz__block-header">
-                            <div class="quiz__block-caption title-md">Какова общая площадь строения?</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" checked name="total-square" value="110" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 110 м² </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="total-square" value="50" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 50-100 м² </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="total-square" value="100" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 100-150 м² </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="total-square" value="150" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 150-200 м² </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="total-square" value="200" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> более 200 м² </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quiz__block">
-                        <div class="quiz__block-header">
-                            <div class="quiz__block-caption title-md">Сколько нужно спальных комнат?</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" checked name="sleeping-rooms" value="1" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 1 спальня </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="sleeping-rooms" value="2" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 2 спальни </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="sleeping-rooms" value="3" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> 3 спальни </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="sleeping-rooms" value=">3" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> более 3 спален </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="sleeping-rooms" value="none" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> не важно </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quiz__block">
-                        <div class="quiz__block-header">
-                            <div class="quiz__block-caption title-md">Укажите пожелания к дому</div>
-                            <p class="quiz__block-subtitle">Можно пропустить</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="checkbox" checked name="wishes" value="attic" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Мансарда </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="checkbox" name="wishes" value="terrace" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Терраса </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="checkbox" name="wishes" value="veranda" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Веранда </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="checkbox" name="wishes" value="porch" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Крыльцо </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="checkbox" name="wishes" value="balcony" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Балкон </span>
-                                </label>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="checkbox" name="wishes" value="second-light" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Второй свет </span>
-                                </label>
-                            </div>
-                            <div class="col-12">
-                                <label class="order__option w-100">
-                                    <input type="checkbox" name="wishes" value="second-light" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100 flex-sm-nowrap flex-wrap"> Другое <input type="text" name="more" placeholder="Укажите любые пожелания">
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quiz__block">
-                        <div class="quiz__block-header">
-                            <div class="quiz__block-caption title-md">Когда планируете <br> приступить к строительству?</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" checked name="start" value="1" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> В течение месяца </span>
-                                </label>
-                            </div>
-                            <div class="col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="start" value="2" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Через 2-3 месяца </span>
-                                </label>
-                            </div>
-                            <div class="col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="start" value="6" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Через полгода </span>
-                                </label>
-                            </div>
-                            <div class="col-sm-6">
-                                <label class="order__option w-100">
-                                    <input type="radio" name="start" value="none" class="order__option-input hidden" hidden>
-                                    <span class="order__option-btn w-100"> Пока неизвесно </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="quiz__controls d-flex">
-                    <span role="button" class="quiz__controls-prev disabled icon-arrow"></span>
-                    <span role="button" class="quiz__controls-next icon-arrow"></span>
-                    <span role="button" class="quiz__controls-submit icon-check hidden"></span>
-                </div>
-            </div>
-            <div class="quiz__form hidden">
-                <div class="quiz__caption title-md">Осталось указать данные для связи</div>
-                <div class="form__body">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
-                        </div>
-                        <div class="col-xl-6">
-                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона">
-                        </div>
-                        <div class="col-12">
-                            <textarea name="comment" class="form-control" placeholder="Комментарий к заявке"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="form__footer mt-lg-4 mt-3 d-flex flex-md-row flex-column align-items-md-center flex-lg-nowrap flex-md-wrap">
-                    <span role="button" class="btn btn-secondary"> Отправить заявку <span class="btn__icon icon-check"></span>
-                    </span>
-                    <p class="form__footer-privacy">нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
-                </div>
-            </div>
-        </div>
-    </div> <!-- plugins -->
+    <!-- plugins -->
     <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

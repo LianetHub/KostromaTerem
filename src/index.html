@@ -10,18 +10,18 @@
             <main class="page">
                 <section class="promo">
                     <div class="container">
-                        <div class="row">
+                        <div class="promo__main rounded-md d-flex align-items-end">
                             <h1 class="promo__title title-lg">
                                 Производство
-                                и строительство
+                                <span>и строительство</span>
                                 деревянных домов
-                                под ключ
+                                <span>под ключ</span>
                             </h1>
-                            <div class="promo__side">
-                                <a href="" class="promo__side-link icon-arrow d-flex flex-column">
+                            <div class="promo__side d-flex ml-auto">
+                                <a href="" class="promo__side-link icon-arrow d-flex flex-column-reverse justify-content-between rounded-sm">
                                     Узнать подробнее
                                 </a>
-                                <a href="" class="promo__side-link icon-arrow d-flex flex-column">
+                                <a href="" class="promo__side-link icon-arrow d-flex flex-column-reverse justify-content-between rounded-sm">
                                     Смотреть проекты
                                 </a>
                             </div>
@@ -35,14 +35,14 @@
                             <div class="categories__header-caption caption">[ Категории домов ]</div>
                             <h2 class="categories__header-title title">
                                 Строим дома и бани из
-                                бруса и бревна «под ключ»
+                                <span>бруса и бревна «под ключ»</span>
                             </h2>
                         </div>
                         <div class="categories__body">
                             <div class="row">
                                 <div class="col-6">
                                     <a href="" class="project d-flex flex-column">
-                                        <span class="project__image">
+                                        <span class="project__image rounded-md">
                                             <img src="@img/projects/01.jpg" class="cover-image" alt="Фото проекта">
                                             <span class="project__quantity">150 проектов домов</span>
                                             <span class="project__arrow icon-arrow"></span>
@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="col-6">
                                     <a href="" class="project d-flex flex-column">
-                                        <span class="project__image">
+                                        <span class="project__image rounded-md">
                                             <img src="@img/projects/02.jpg" class="cover-image" alt="Фото проекта">
                                             <span class="project__quantity">150 проектов домов</span>
                                             <span class="project__arrow icon-arrow"></span>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="col-6">
                                     <a href="" class="project d-flex flex-column">
-                                        <span class="project__image">
+                                        <span class="project__image rounded-md">
                                             <img src="@img/projects/03.jpg" class="cover-image" alt="Фото проекта">
                                             <span class="project__quantity">150 проектов домов</span>
                                             <span class="project__arrow icon-arrow"></span>
@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="col-6">
                                     <a href="" class="project d-flex flex-column">
-                                        <span class="project__image">
+                                        <span class="project__image rounded-md">
                                             <img src="@img/projects/04.jpg" class="cover-image" alt="Фото проекта">
                                             <span class="project__quantity">150 проектов домов</span>
                                             <span class="project__arrow icon-arrow"></span>
@@ -84,32 +84,144 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="projects">
                     <div class="container">
-                        <div class="projects__header d-flex">
-                            <div class="projects__caption">[ популярные проекты ]</div>
+
+                        <div class="projects__header d-flex ">
+                            <div class="projects__caption caption">[ популярные проекты ]</div>
                             <h2 class="projects__title title">
                                 Мы собрали для вас
-                                популярные проекты
+                                <span>популярные проекты</span>
                             </h2>
-                            <div class="projects__controls">
-                                <span role="button" class="projects__prev icon-arrow"></span>
-                                <span role="button" class="projects__next icon-arrow"></span>
+                            <div class="projects__controls d-flex align-self-end">
+                                <span role="button" class="projects__prev slick-prev"></span>
+                                <span role="button" class="projects__next slick-next"></span>
                             </div>
                         </div>
                         <div class="projects__body">
                             <div class="projects__slider">
-                                <div class="projects__slide">
-                                    <img src="@img/projects/04.jpg" class="cover-image" alt="project">
-                                    <div class="projects__info">
-                                        <div class="projects__info-title">Проект дома ДБ-185</div>
-                                        <div class="projects__info-props">[ 6x8 Размеры дома ] [ 86.5 м2 площадь дома ]</div>
-                                        <div class="projects__info-price">895 000 ₽</div>
-                                        <a href="" class="projects__info-btn btn btn-primary icon-arrow">
-                                            Подробнее
-                                        </a>
-                                    </div>
+                                <div class="projects__slide rounded-md">
+                                    <img src="@img/projects/01.jpg" class="cover-image rounded-md" alt="project">
                                 </div>
+                                <div class="projects__slide rounded-md">
+                                    <img src="@img/projects/02.jpg" class="cover-image rounded-md" alt="project">
+                                </div>
+                                <div class="projects__slide rounded-md">
+                                    <img src="@img/projects/03.jpg" class="cover-image rounded-md" alt="project">
+                                </div>
+                                <div class="projects__slide rounded-md">
+                                    <img src="@img/projects/04.jpg" class="cover-image rounded-md" alt="project">
+                                </div>
+                                <div class="projects__slide rounded-md">
+                                    <img src="@img/projects/05.jpg" class="cover-image rounded-md" alt="project">
+                                </div>
+                                <div class="projects__slide rounded-md">
+                                    <img src="@img/projects/06.jpg" class="cover-image rounded-md" alt="project">
+                                </div>
+                                <div class="projects__slide rounded-md">
+                                    <img src="@img/projects/07.jpg" class="cover-image rounded-md" alt="project">
+                                </div>
+                            </div>
+                            <div class="projects__infos">
+                                <div class="projects__info">
+                                    <div class="projects__info-title">Проект дома ДБ-185</div>
+                                    <div class="projects__info-props d-flex flex-wrap">
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">6x8</span> Размеры дома ]
+                                        </div>
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">86.5 м²</span> площадь дома ]
+                                        </div>
+                                    </div>
+                                    <div class="projects__info-price">895 000 ₽</div>
+                                    <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                                </div>
+
+                                <div class="projects__info">
+                                    <div class="projects__info-title">Проект дома ДБ-200</div>
+                                    <div class="projects__info-props d-flex flex-wrap">
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">7x9</span> Размеры дома ]
+                                        </div>
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">100.0 м²</span> площадь дома ]
+                                        </div>
+                                    </div>
+                                    <div class="projects__info-price">1 050 000 ₽</div>
+                                    <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                                </div>
+
+                                <div class="projects__info">
+                                    <div class="projects__info-title">Проект дома ДБ-220</div>
+                                    <div class="projects__info-props d-flex flex-wrap">
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">8x10</span> Размеры дома ]
+                                        </div>
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">120.0 м²</span> площадь дома ]
+                                        </div>
+                                    </div>
+                                    <div class="projects__info-price">1 250 000 ₽</div>
+                                    <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                                </div>
+
+                                <div class="projects__info">
+                                    <div class="projects__info-title">Проект дома ДБ-240</div>
+                                    <div class="projects__info-props d-flex flex-wrap">
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">9x11</span> Размеры дома ]
+                                        </div>
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">140.0 м²</span> площадь дома ]
+                                        </div>
+                                    </div>
+                                    <div class="projects__info-price">1 500 000 ₽</div>
+                                    <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                                </div>
+
+                                <div class="projects__info">
+                                    <div class="projects__info-title">Проект дома ДБ-260</div>
+                                    <div class="projects__info-props d-flex flex-wrap">
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">10x12</span> Размеры дома ]
+                                        </div>
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">160.0 м²</span> площадь дома ]
+                                        </div>
+                                    </div>
+                                    <div class="projects__info-price">1 800 000 ₽</div>
+                                    <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                                </div>
+
+                                <div class="projects__info">
+                                    <div class="projects__info-title">Проект дома ДБ-280</div>
+                                    <div class="projects__info-props d-flex flex-wrap">
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">11x13</span> Размеры дома ]
+                                        </div>
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">180.0 м²</span> площадь дома ]
+                                        </div>
+                                    </div>
+                                    <div class="projects__info-price">2 100 000 ₽</div>
+                                    <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                                </div>
+
+                                <div class="projects__info">
+                                    <div class="projects__info-title">Проект дома ДБ-300</div>
+                                    <div class="projects__info-props d-flex flex-wrap">
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">12x14</span> Размеры дома ]
+                                        </div>
+                                        <div class="projects__info-prop">
+                                            [ <span class="font-weight-bolder">200.0 м²</span> площадь дома ]
+                                        </div>
+                                    </div>
+                                    <div class="projects__info-price">2 500 000 ₽</div>
+                                    <a href="" class="projects__info-btn btn btn-secondary btn-sm icon-arrow">Подробнее</a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -182,9 +294,9 @@
                     </div>
                 </section>
             </main>
-            @@include('html/_footer.html', {})
+            <!-- @@include('html/_footer.html', {}) -->
         </div>
-        @@include('html/_popup.html', {})
+        <!-- @@include('html/_popup.html', {}) -->
         @@include('html/_js.html', {})
     </body>
 </html>

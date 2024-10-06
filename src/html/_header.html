@@ -1,105 +1,102 @@
 <header class="header">
     <div class="container">
-        <div class="header__main d-flex">
-            <a href="/" class="header__logo">
-                <img src="@img/logo.png" alt="Логотип">
-            </a>
-            <div class="header__actions d-flex">
-                <div role="search" class="header__search">
-                    <span role="button" class="header__search-btn icon-search"></span>
-                    <input type="text" name="" class="form-control" placeholder="Что вы ищите?">
-                </div>
-                <a href="" class="header__action icon-heart">
-                    <span class="header__action-quantity">2</span>
+        <div class="header__wrapper">
+            <div class="header__main d-flex align-items-center">
+                <a href="/" class="header__logo">
+                    <img src="@img/logo.png" alt="Логотип">
                 </a>
-                <a href="" class="header__action icon-compare">
-                    <span class="header__action-quantity">2</span>
+                <div class="header__actions d-flex">
+                    <div role="search" class="header__search">
+                        <span role="button" class="header__search-btn icon-search"></span>
+                        <input type="text" name="" class="header__search-input" placeholder="Что вы ищите?">
+                    </div>
+                    <a href="" class="header__action icon-heart">
+                        <span class="header__action-quantity">2</span>
+                    </a>
+                    <a href="" class="header__action icon-compare">
+                        <span class="header__action-quantity">2</span>
+                    </a>
+                </div>
+                <span role="button" aria-label="Открыть меню" class="header__menu-btn icon-menu rounded">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div class="header__contacts d-flex">
+                    <a href="" class="header__whatsapp icon-whatsapp"></a>
+                    <div class="header__contacts-block d-flex flex-md-column rounded">
+                        <a href="tel:89103731880" class="header__contacts-link">8 (910) 373 18 80</a>
+                        <a href="mailto:info@costroma-terem.ru" class="header__contacts-link sm-link">info@costroma-terem.ru</a>
+                    </div>
+                </div>
+                <a href="" class="header__contacts-feedback btn btn-primary icon-arrow">
+                    Получить консультацию
                 </a>
             </div>
-            <span role="button" aria-label="Открыть меню" class="header__menu-btn icon-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-            <div class="header__contacts d-flex">
-                <a href="" class="header__whatsapp icon-whatsapp"></a>
-                <div class="header__contacts-block">
-                    <a href="tel:89103731880" class="header__contacts-link">8 (910) 373 18 80</a>
-                    <a href="mailto:info@costroma-terem.ru" class="header__contacts-link">info@costroma-terem.ru</a>
+            <div class="header__menu menu d-flex justify-content-between rounded-sm">
+                <nav class="menu__body">
+                    <ul class="menu__list d-flex flex-wrap">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <span role="button" class="menu__link icon-chevron">Проекты</span>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <span role="button" class="menu__link icon-chevron">Строительство</span>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <span role="button" class="menu__link icon-chevron">Материалы</span>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <span role="button" class="menu__link icon-chevron">Клиентам</span>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <span role="button" class="menu__link icon-chevron">Галерея</span>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__contacts d-flex flex-column align-items-end">
+                    <div class="menu__contacts-row d-flex">
+                        <a href="" class="menu__contacts-whatsapp icon-whatsapp"></a>
+                        <a href="tel:89103731880" class="menu__contacts-link">8 (910) 373 18 80</a>
+                    </div>
+                    <a href="mailto:Info@mail.ru" class="menu__contacts-link">Info@mail.ru</a>
                 </div>
-            </div>
-            <a href="" class="header__contacts-feedback btn btn-primary icon-arrow">
-                Получить консультацию
-            </a>
-        </div>
-        <div class="header__menu menu d-flex">
-            <nav class="menu__body">
-                <ul class="menu__list d-flex flex-wrap">
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Главная</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">О компании</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Проекты</a>
-                        <span role="button" class="menu__arrow icon-chevron"></span>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Строительство</a>
-                        <span role="button" class="menu__arrow icon-chevron"></span>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Материалы</a>
-                        <span role="button" class="menu__arrow icon-chevron"></span>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Отзывы</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Клиентам</a>
-                        <span role="button" class="menu__arrow icon-chevron"></span>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Галерея</a>
-                        <span role="button" class="menu__arrow icon-chevron"></span>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Пункт подменю.</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="menu__contacts d-flex flex-column">
-                <div class="menu__contacts-row">
-                    <a href="" class="menu__contacts-whatsapp icon-whatsapp"></a>
-                    <a href="tel:89103731880" class="menu__contacts-link">8 (910) 373 18 80</a>
-                </div>
-                <a href="mailto:Info@mail.ru" class="menu__contacts-link">Info@mail.ru</a>
             </div>
         </div>
     </div>

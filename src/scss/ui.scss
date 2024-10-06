@@ -1,5 +1,5 @@
 @import 'modules/config';
-@import 'modules/quiz';
+// @import 'modules/quiz';
 
 .font-weight-semibold {
 	font-weight: 600;
@@ -12,6 +12,11 @@
 .rounded-md {
 	@media (min-width: $md4) {
 		border-radius: 30px !important;
+	}
+}
+.rounded-sm {
+	@media (min-width: $md4) {
+		border-radius: 20px !important;
 	}
 }
 
@@ -182,6 +187,7 @@
 	font-size: 0;
 	background: #fff;
 	color: $accent;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 50%;
 	display: inline-flex;
 	justify-content: center;
@@ -197,16 +203,14 @@
 	@media (min-width: $md0) {
 		width: 80px;
 		height: 80px;
+		border-radius: 80px;
 	}
 	&::before {
 		@extend %ic, .icon-arrow;
-		font-weight: 700;
+
 		font-size: 18px;
 		@media (min-width: $md3) {
 			font-size: 24px;
-		}
-		@media (min-width: $md0) {
-			font-size: 32px;
 		}
 	}
 	@media (any-hover: hover) {
@@ -215,26 +219,26 @@
 			color: #fff;
 		}
 	}
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	// position: absolute;
+	// top: 50%;
+	// transform: translateY(-50%);
 	&.slick-disabled {
-		opacity: 0;
-		visibility: hidden;
+		// opacity: 0;
+		// visibility: hidden;
 	}
 }
 
 .slick-next {
 	right: 0;
 	&::before {
-		transform: rotate(90deg);
+		// transform: rotate(90deg);
 	}
 }
 
 .slick-prev {
 	left: 0;
 	&::before {
-		transform: rotate(-90deg);
+		transform: rotate(-180deg);
 	}
 }
 
