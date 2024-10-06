@@ -1,11 +1,27 @@
 .footer {
-	background: #242424;
-	color: #fff;
-	padding: 40px 0 33px;
-	@media (min-width: $md5) {
-		padding: 80px 0 66px;
+	border-radius: 50px 50px 0 0;
+	background: #303030;
+	padding: 50px 0 130px;
+	// .footer__feedback
+	&__feedback {
+		border-radius: 50px;
+		background: #fff;
 	}
-
+	// .footer__feedback-main
+	&__feedback-main {
+	}
+	// .footer__feedback-title
+	&__feedback-title {
+	}
+	// .footer__form
+	&__form {
+	}
+	// .footer__form-privacy
+	&__form-privacy {
+	}
+	// .footer__feedback-image
+	&__feedback-image {
+	}
 	// .footer__header
 	&__header {
 		gap: 16px;

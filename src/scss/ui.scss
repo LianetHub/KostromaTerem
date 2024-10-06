@@ -124,30 +124,33 @@
 }
 
 .play-btn {
-	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 1;
-	color: #fff;
-
-	border-radius: 86px;
+	background: #fff;
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: $accent;
-	transition: background-color 0.3s ease 0s;
+	color: $accent;
+	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 	width: 80px;
-	height: 40px;
+	height: 80px;
+	padding-left: 4px;
 	@media (min-width: $md4) {
-		width: 110px;
-		height: 70px;
+		width: 100px;
+		height: 100px;
 	}
 	&::before {
 		@extend %ic, .icon-play;
-		font-size: 14px;
-		transform: rotate(-90deg);
+		font-size: 30px;
 	}
 	@media (any-hover: hover) {
 		&:hover {
-			background: darken($color: $accent, $amount: 5);
+			background: $accent;
+			color: #fff;
 		}
 	}
 }
@@ -183,6 +186,7 @@
 }
 
 .slick-arrow {
+	position: static;
 	vertical-align: middle;
 	font-size: 0;
 	background: #fff;
@@ -223,7 +227,8 @@
 	// top: 50%;
 	// transform: translateY(-50%);
 	&.slick-disabled {
-		// opacity: 0;
+		opacity: 0.6;
+		pointer-events: none;
 		// visibility: hidden;
 	}
 }

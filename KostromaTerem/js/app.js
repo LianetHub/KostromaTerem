@@ -80,12 +80,6 @@ $(function () {
             $("body").removeClass("lock-menu");
         }
 
-        // open contacts
-        if ($target.is('.header__callback-btn')) {
-            $target.toggleClass('active');
-            $('.header__body').toggleClass('open-contacts');
-            $('.header__callback-body').slideToggle()
-        }
 
         // submenu
         if ($target.is('.menu__link') && $('body').hasClass('_touch')) {
@@ -112,138 +106,15 @@ $(function () {
         }
 
 
-        // examples tabs
-        if ($target.is('.examples__btn')) {
+        // clients tabs
+        if ($target.is('.clients__tabs-btn')) {
             $target.addClass('active').siblings().removeClass('active');
-            $('.examples__image').eq($target.index()).addClass('active fade').siblings().removeClass('active fade')
+            $('.clients__tabs-content').eq($target.index()).addClass('active').siblings().removeClass('active');
+            $('.clients__controls').eq($target.index()).addClass('active').siblings().removeClass('active');
+            $('.clients-slider.slick-initialized').slick("setPosition");
         }
-
-        //  visual block 
-        if ($target.is('.visual__info-btn')) {
-            let $currentAction = $target.parent(".visual__info-action");
-            let $currentList = $target.next(".visual__info-list");
-
-            if ($target.hasClass('active')) {
-                $currentAction.removeClass('active');
-                $target.removeClass('active');
-                $currentList.slideUp();
-            } else {
-
-                $('.visual__info-action').removeClass('active');
-                $('.visual__info-btn').removeClass('active');
-                $('.visual__info-list').slideUp();
-
-
-                $currentAction.addClass('active');
-                $target.addClass('active');
-                $currentList.slideDown();
-            }
-        }
-
-        //  configurator
-        if ($target.is('[data-tab]')) {
-            let currentTab = $target.data('tab');
-            let tabBtn = $(`[name="config"][value="${currentTab}"]`);
-            tabBtn.trigger('change');
-            tabBtn.trigger('click');
-        }
-
-        if ($target.is('[data-option]')) {
-            let currentTab = $target.data('option');
-            let tabBtn = $(`[value="${currentTab}"]`);
-            tabBtn.trigger('change');
-            tabBtn.trigger('click');
-            $.fancybox.getInstance().close()
-        }
-
-        //  quiz
-        if ($target.is('.quiz__controls-next')) {
-            updateQuiz()
-        }
-
-        if ($target.is('.quiz__controls-prev')) {
-            updateQuiz('prev')
-        }
-
-        if ($target.is('.quiz__controls-submit')) {
-            $('.quiz__main').addClass('hidden');
-            $('.quiz__form').removeClass('hidden');
-        }
-
 
     });
-
-
-    function updateQuiz(direction = 'next') {
-
-        let currentQuestion = $('.quiz__progressbar-current').text();
-        let totalQuestions = $('.quiz__progressbar-total').text();
-        let $progressBlock = $('.quiz__progressbar-progress');
-        let $prevBtn = $('.quiz__controls-prev');
-        let $nextBtn = $('.quiz__controls-next');
-        let $submitBtn = $('.quiz__controls-submit');
-
-        if (direction == 'next') {
-            +currentQuestion++;
-            $('.quiz__progressbar-current').text(currentQuestion);
-            $('.quiz__block.active').removeClass('active').next().addClass('active');
-            $prevBtn.removeClass('disabled');
-
-            if (currentQuestion == totalQuestions) {
-
-                $submitBtn.removeClass('hidden');
-                $nextBtn.addClass('hidden')
-            }
-        }
-        if (direction == 'prev') {
-            +currentQuestion--;
-            $('.quiz__progressbar-current').text(currentQuestion);
-            $('.quiz__block.active').removeClass('active').prev().addClass('active');
-            $nextBtn.removeClass('hidden');
-            $submitBtn.addClass('hidden');
-            if (currentQuestion === 1) {
-                $prevBtn.addClass('disabled');
-            }
-        }
-
-        $progressBlock.css('--progress', ((currentQuestion / totalQuestions) * 100) + "%");
-
-    }
-
-
-    if ($('[name="config"]').length > 0) {
-        $('[name="config"]').on('change', (e) => {
-
-            let $target = $(e.target);
-            let currentValue = $target.val()
-
-            $(`.order-more__content#${currentValue}`).addClass('active').siblings().removeClass('active')
-
-
-        })
-    }
-
-
-    if ($('.materials__item').length > 0) {
-        $('.materials__item').on('mouseenter', function (e) {
-            $(this).addClass('active');
-            $('.materials__point').eq($(this).index()).addClass('active');
-        })
-        $('.materials__item').on('mouseleave', function (e) {
-            $('.materials__item').removeClass('active')
-            $('.materials__point').removeClass('active');
-        })
-        $('.materials__point').on('mouseenter', function (e) {
-            $(this).addClass('active');
-            $('.materials__item').eq($(this).index()).addClass('active');
-
-        })
-        $('.materials__point').on('mouseleave', function (e) {
-            $('.materials__item').removeClass('active')
-            $('.materials__point').removeClass('active');
-        })
-    }
-
 
 
     // fancybox settings
@@ -257,24 +128,60 @@ $(function () {
 
     // sliders
 
-    // if ($('.completed-projects__slider').length > 0) {
-    //     $('.completed-projects__slider').slick({
-    //         infinite: false,
-    //         variableWidth: true,
-    //         arrows: false,
-    //         responsive: [
-    //             {
-    //                 breakpoint: 576,
-    //                 settings: {
-    //                     variableWidth: false,
-    //                     slidesToShow: 1,
-    //                 }
-    //             }
-    //         ]
-    //     });
+    if ($('.about__slider').length > 0) {
+        $('.about__slider').slick({
+            infinite: false,
+            variableWidth: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
 
-    // }
+    if ($('.clients__photos').length > 0) {
+        $('.clients__photos').slick({
+            infinite: false,
+            slidesToShow: 2.75,
+            prevArrow: '.clients__photos-prev',
+            nextArrow: '.clients__photos-next',
+            rtl: true,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
 
+    if ($('.clients__videos').length > 0) {
+        $('.clients__videos').slick({
+            infinite: false,
+            variableWidth: true,
+            prevArrow: '.clients__videos-prev',
+            nextArrow: '.clients__videos-next',
+            rtl: true,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
 
     class CustomSlider {
         constructor(sliderSelector, options = {}) {
@@ -347,8 +254,6 @@ $(function () {
         }
     }
 
-
-
     if ($('.projects__slider').length > 0) {
         new CustomSlider('.projects__slider', {
             slideSelector: '.projects__slide',
@@ -357,66 +262,11 @@ $(function () {
             currentIndex: 1,
             slideMargin: 20,
             onSlideChange: (slider) => {
-
-                $('.projects__info').hide();
-                $('.projects__info').eq(slider.currentIndex).show();
+                $('.projects__info').removeClass("active");
+                $('.projects__info').eq(slider.currentIndex).addClass("active");
             }
         });
     }
-
-
-    // if ($('.projects__item-slider').length > 0) {
-
-    //     $('.projects__item-slider').each(function () {
-
-    //         $(this).on('init', function (e) {
-    //             let $slider = $(e.target)
-    //             let slides = $slider.find('.projects__item-slide');
-
-    //             if (slides.length > 0) {
-    //                 getSlickMouseNavbar($slider, slides.length)
-    //             }
-
-    //         })
-
-    //         $(this).slick({
-    //             infinite: false,
-    //             variableWidth: true,
-    //             arrows: false,
-    //             dots: true,
-
-    //             swipe: false
-    //         });
-
-
-    //         function getSlickMouseNavbar($slider, quantity) {
-
-    //             $slider.on('mousemove', function (event) {
-
-    //                 if (event.target.closest('.slick-dots')) {
-    //                     return;
-    //                 }
-
-
-
-    //                 let sliderWidth = $slider.width();
-    //                 let mouseX = event.pageX - $slider.offset().left;
-
-    //                 let areaWidth = sliderWidth / quantity;
-    //                 let index = Math.floor(mouseX / areaWidth);
-
-    //                 $slider.slick('slickSetOption', 'speed', 0, true);
-    //                 $slider.slick('slickGoTo', index);
-
-    //                 setTimeout(function () {
-    //                     $slider.slick('slickSetOption', 'speed', 300, true);
-    //                 }, 0);
-    //             });
-    //         }
-
-    //     })
-
-    // }
 
 
     // header height
@@ -439,33 +289,6 @@ $(function () {
             $('header').removeClass('scroll');
         }
     });
-
-
-    // map
-
-    if ($('#map').length > 0) {
-
-        ymaps.ready(function () {
-            var myMap = new ymaps.Map('map', {
-                center: [55.651344, 37.618423],
-                zoom: 10,
-                controls: []
-            });
-
-
-
-            myMap.controls.remove('geolocationControl');
-            myMap.controls.remove('searchControl');
-            myMap.controls.remove('trafficControl');
-            myMap.controls.remove('typeSelector');
-            myMap.controls.remove('fullscreenControl');
-            myMap.controls.remove('zoomControl');
-            myMap.controls.remove('rulerControl');
-
-
-
-        });
-    }
 
 
 });
