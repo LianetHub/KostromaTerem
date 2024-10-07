@@ -84,7 +84,13 @@
 }
 
 .benefits {
-	padding: 20px 0 138px;
+	padding: 20px 0 0 0;
+	& + .categories {
+		margin-top: 138px;
+	}
+	& + .nums {
+		padding-top: 20px;
+	}
 	.row {
 		--bs-gutter-x: 20px;
 	}

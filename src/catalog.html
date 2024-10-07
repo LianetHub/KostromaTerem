@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Вологодское зодчество | Каталог'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "offset": false
+            })
+            <main class="page">
+                <nav class="breadcrumbs">
+                    <div class="container">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="" class="active">Каталог</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="catalog">
+                    <div class="container">
+                        <div class="catalog__header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="catalog__caption">
+                                        [ каталог ]
+                                    </div>
+                                    <h2 class="catalog__title title">
+                                        Выберите проект
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__body">
+                            <div class="row">
+                                @@loop('./html/_product.html', './html/json/projects.json')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        <!-- @@include('html/_popup.html', {}) -->
+        @@include('html/_js.html', {})
+    </body>
+</html>

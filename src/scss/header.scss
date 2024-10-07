@@ -1,16 +1,27 @@
 .header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 78px 0 0 0;
+
 	z-index: 6;
-	transition: padding 0.1s ease 0s;
+	transition: padding 0.1s ease 0s, transform 0.1s ease 0s;
 	will-change: padding;
 	contain: layout;
 	transform: translate3d(0, 0, -1px);
+	padding: 40px 0 0 0;
 	&.scroll {
 		padding: 20px 0 0 0;
+		&.header_offset {
+			transform: translate3d(0, 0, -1px);
+		}
+	}
+	&.header_offset {
+		transform: translate3d(0, 40px, -1px);
+		margin-bottom: -110px;
+		.header__main {
+			padding: 0 50px;
+		}
 	}
 	// .header__wrapper
 	&__wrapper {
@@ -19,7 +30,6 @@
 	// .header__main
 	&__main {
 		position: relative;
-		padding: 0 50px;
 		z-index: 2;
 	}
 	// .header__logo

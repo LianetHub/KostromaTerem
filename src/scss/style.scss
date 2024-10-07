@@ -36,6 +36,8 @@ $md3: 991.98px;
 $md4: 767.98px;
 $md5: 575.98px;
 
+$header: var(--header-height, 140px);
+
 $text: #303030;
 $accent: #b0cb1f;
 $secondary: #d4cd8e;
@@ -96,3 +98,7 @@ body {
 // =======================ОСНОВНОЙ БЛОК===================
 
 @import 'pages/home';
+@import 'pages/catalog';
+@import 'pages/service';
+@import 'pages/about';
+@import 'pages/product';

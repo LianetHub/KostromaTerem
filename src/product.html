@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Вологодское зодчество | Страница товара'
+    })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "offset": false
+            })
+            <main class="page">
+                <nav class="breadcrumbs">
+                    <div class="container">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Каталог</a></li>
+                            <li><a href="" class="active">О Дом из бруса под усадку 9 на 10 дб-186</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="extras">
+                    <div class="container">
+                        <div class="extras__header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="extras__caption caption">
+                                        [ дополнительные опции ]
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="extras__title title">
+                                        Рассчитайте стоимость
+                                        <span>дополнительных опций</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extras__body">
+                            <div class="row align-items-start">
+                                <div class="col-3 position-sticky">
+                                    <ul class="extras__info">
+                                        <li>
+                                            Базовая стоимость дома:
+                                            <strong>1 292 000 ₽</strong>
+                                        </li>
+                                        <li>
+                                            Стоимость дополнений:
+                                            <strong>40 000 ₽</strong>
+                                        </li>
+                                        <li>
+                                            Итоговая стоимость дома:
+                                            <strong>1 332 000 ₽</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-9">
+                                    <ul class="extras__list">
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Бытовка для проживания строителей
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                + 40 000 р.
+                                            </div>
+                                        </li>
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Полная обработка дома антисептиком
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                + 40 000 р.
+                                            </div>
+                                        </li>
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Сборка стен на пружинный узел СИЛА
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                уточняйте стоимость
+                                            </div>
+                                        </li>
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Генератор
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                бесплатно
+                                            </div>
+                                        </li>
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Внесение изменений в планировку проекта
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                бесплатно
+                                            </div>
+                                        </li>
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Расчет стоимости вашего проекта
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                бесплатно
+                                            </div>
+                                        </li>
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Эскизный проект (при заказе строительства)
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                бесплатно
+                                            </div>
+                                        </li>
+                                        <li class="extras__item icon-check d-flex align-items-center">
+                                            <div class="extras__item-title">
+                                                Выезд специалиста для подписания договора и осмотра участка и подъездных путей
+                                            </div>
+                                            <div class="extras__item-price ml-auto text-right color-green font-weight-semibold">
+                                                бесплатно
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_steps.html', {})
+                <section class="questions">
+                    <div class="container">
+                        <div class="questions__body rounded">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="questions__image">
+                                        <img src="@img/man.png" alt="Фото сотрудника">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h2 class="questions__title title">
+                                        Задать вопросы
+                                        <span>по этому проекту</span>
+                                    </h2>
+                                    <p class="questions__desc">
+                                        Оставьте свои контктные данные и наш специалист перезвонит Вам в течение 15-ти минут
+                                    </p>
+                                    <div role="form" class="questions__form">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="email" name="email" class="form-control" placeholder="Ваша ел. почта">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="tel" name="tel" class="form-control" placeholder="+ 7 (___)-___-__-__">
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="file">
+                                                    <input type="file" name="files[]" class="file__input hidden" hidden>
+                                                    <span class="file__btn btn btn-white icon-copy">
+                                                        Прикрепить файл
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <textarea name="message" class="form-control" placeholder="Ваш комментарий к заявке"></textarea>
+                                            </div>
+                                            <div class="col-6">
+                                                <span role="button" class="form__submit btn btn-white icon-arrow">
+                                                    Заказать звонок
+                                                </span>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="form__privacy">
+                                                    Нажимая кнопку «Заказать обратный звонок», Вы даете 
+                                                    согласие на обработку своих персональных данных.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="visual">
+                    <div class="container">
+                        <div class="visual__header">
+                            <div class="visual__caption caption">
+                                [ 3д разрез дома ]
+                            </div>
+                            <h2 class="visual__title title">
+                                Что такое дом под усадку?
+                            </h2>
+                        </div>
+                        <div class="visual__body">
+                            <div class="visual__image">
+                                <img src="@img/object.jpg" alt="Пример дома">
+                            </div>
+                            <div class="visual__items">
+                                <div class="visual__item">
+                                    <span role="button" class="visual__point icon-plus"></span>
+                                    <div class="visual__info rounded">
+                                        <div class="visual__info-title">
+                                            Фундамент
+                                        </div>
+                                        <p class="visual__info-desc">
+                                            Возведение фундамента не входит в базовую компдектацию дома. За отдельную плату доступно 3 вида фундамента:
+                                        </p>
+                                        <ul class="visual__info-list">
+                                            <li>
+                                                Свайно-винтовой фундмаент
+                                                <img src="@img/fundaments/01.png" alt="Фото фундамента">
+                                            </li>
+                                            <li>
+                                                Ж/б свайный фундамент
+                                                <img src="@img/fundaments/02.png" alt="Фото фундамента">
+                                            </li>
+                                            <li>
+                                                Ленточный фундамент
+                                                <img src="@img/fundaments/03.png" alt="Фото фундамента">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_clients.html', {})
+                <div class="products">
+                    <div class="container">
+                        <div class="products__header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="products__caption caption">
+                                        [ похожие проекты ]
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="products__title title">
+                                        Смотрите также
+                                        похожие проекты
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__body">
+                            <div class="row">
+                                @@loop('./html/_product.html', './html/json/projects-more.json')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('html/_benefits.html', {})
+                @@include('html/_nums.html', {})
+                <section class="similar">
+                    <div class="container">
+                        <div class="similar__header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="similar__caption caption">[ похожие проекты ]</div>
+                                </div>
+                                <div class="col-9">
+                                    <h2 class="similar__title title">
+                                        Смотрите также
+                                        <span>похожие проекты</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="similar__body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 1
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 2
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 3
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 4
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 5
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 6
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 7
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                        <div class="similar__item">
+                                            <span role="button" class="similar__item-title icon-plus">
+                                                Заголовок 8
+                                            </span>
+                                            <p class="similar__item-desc">
+                                                В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        <!-- @@include('html/_popup.html', {}) -->
+        @@include('html/_js.html', {})
+    </body>
+</html>

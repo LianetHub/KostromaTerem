@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Вологодское зодчество | О Компании'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "offset": false
+            })
+            <main class="page">
+                <nav class="breadcrumbs">
+                    <div class="container">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="" class="active">О компании</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="about">
+                    <div class="container">
+                        <div class="about__caption caption text-center">[ о компании ]</div>
+                        <h2 class="about__title title text-center">
+                            «Кострома Терем» - лучшее качество по лучшей цене
+                        </h2>
+                        <p class="about__desc text-center">
+                            Строительство загородных домов, коттеджей и дачных домиков из дерева продолжает неуклонно расти, несмотря на развитие железобетонного и кирпичного домостроения. Все больше людей мечтают без лишней траты времени и недорого купить деревянный дом из бруса или бревна под ключ. Объясняется это тягой к природе, к отдыху от непомерных физических и психологических нагрузок в шумном городе. Небольшой домик из бруса или бревна за городом может стать настоящей отдушиной.
+                            <br> К сожалению, найти оптимальное соотношение цена-качество не так уж просто.
+                        </p>
+                        <div class="about__slider">
+                            <div class="about__slide">
+                                <img src="@img/about/04.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/01.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/02.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__card d-flex flex-column rounded-md rounded-md">
+                                <h3 class="about__card-title">Строительная компания «Кострома Терем»</h3>
+                                <p class="about__card-text">
+                                    предлагает простое решение проблемы ‒ заказать деревянный дом из бруса или оцилиндрованного бревна под ключ по цене ниже средней рыночной.
+                                    У нас есть множество готовых проектов деревянных домов – как из различных видов бруса, так&nbsp;и&nbsp;из&nbsp;бревна,
+                                    став хозяевами которых&nbsp;вы&nbsp;сможете наслаждаться покоем&nbsp;и&nbsp;отдыхом.
+                                </p>
+                                <div class="about__card-logo">
+                                    <img src="@img/logo.png" alt="Логотип">
+                                </div>
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/03.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/02.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/07.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/06.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__card d-flex flex-column rounded-md rounded-md">
+                                <h3 class="about__card-title">Lorem ipsum dolor sit amet.</h3>
+                                <p class="about__card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur autem voluptates provident nobis debitis quo ipsam sed illum temporibus, asperiores quia exercitationem corporis tempora, amet eligendi inventore aperiam vero?
+                                </p>
+                                <div class="about__card-logo">
+                                    <img src="@img/logo.png" alt="Логотип">
+                                </div>
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/08.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                            <div class="about__slide">
+                                <img src="@img/about/09.jpg" class="cover-image rounded-md" alt="Фото проекта">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                @@include('html/_benefits.html', {})
+                @@include('html/_nums.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        <!-- @@include('html/_popup.html', {}) -->
+        @@include('html/_js.html', {})
+    </body>
+</html>

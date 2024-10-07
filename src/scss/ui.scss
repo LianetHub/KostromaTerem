@@ -1,5 +1,5 @@
 @import 'modules/config';
-// @import 'modules/quiz';
+@import 'modules/navigation';
 
 .font-weight-semibold {
 	font-weight: 600;
@@ -42,7 +42,7 @@
 	text-transform: uppercase;
 }
 
-.color-yellow {
+.color-green {
 	color: $accent;
 }
 
