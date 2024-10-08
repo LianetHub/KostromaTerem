@@ -97,7 +97,10 @@
 			opacity: 1;
 		}
 		padding: em(29, 20) em(10, 20) em(29, 20) em(70, 20);
-		font-size: 14px;
+		font-size: 12px;
+		@media (min-width: 360px) {
+			font-size: 14px;
+		}
 		@media (min-width: $md5) {
 			font-size: 16px;
 		}
