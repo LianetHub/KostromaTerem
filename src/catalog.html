@@ -22,13 +22,105 @@
                         <div class="catalog__header">
                             <div class="row">
                                 <div class="col-3">
-                                    <div class="catalog__caption">
+                                    <div class="catalog__caption caption">
                                         [ каталог ]
                                     </div>
+                                </div>
+                                <div class="col-9">
                                     <h2 class="catalog__title title">
                                         Выберите проект
                                     </h2>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="catalog__filters">
+                            <div class="catalog__filters-header">
+                                <a href="" class="active">
+                                    Дома из профилированного бруса <span class="color-gray">(150)</span>
+                                </a>
+                                <a href="">
+                                    Дома из клееного бруса <span class="color-gray">(150)</span>
+                                </a>
+                                <a href="">
+                                    Дома из оцилиндрованного бревна <span class="color-gray">(150)</span>
+                                </a>
+                                <a href="">
+                                    Каркасные дома <span class="color-gray">(150)</span>
+                                </a>
+                            </div>
+                            <div class="catalog__filters-body">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="catalog__filters-caption">Стоимость, руб.</div>
+                                        <div class="catalog__filters-content">
+                                            <div class="catalog__filters-row">
+                                                <div class="catalog__filters-columns">
+                                                    <div class="catalog__filters-column">
+                                                        <span class="catalog__filters-unit">от</span>
+                                                        <input type="text" name="start-price" min="0" value="1400000" maxlength="8" class="catalog__filters-input catalog__filters-input_start">
+                                                    </div>
+                                                    <div class="catalog__filters-column">
+                                                        <span class="catalog__filters-unit">до</span>
+                                                        <input type="text" name="end-price" min="0" value="5560780" max="10000000" maxlength="8" class="catalog__filters-input catalog__filters-input_end">
+                                                    </div>
+                                                </div>
+                                                <div class="catalog__filters-range"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="catalog__filters-caption">площадь, м2</div>
+                                        <div class="catalog__filters-content">
+                                            <div class="catalog__filters-row">
+                                                <div class="catalog__filters-columns">
+                                                    <div class="catalog__filters-column">
+                                                        <span class="catalog__filters-unit">от</span>
+                                                        <input type="text" name="start-square" min="0" value="20" maxlength="3" class="catalog__filters-input catalog__filters-input_start">
+                                                    </div>
+                                                    <div class="catalog__filters-column">
+                                                        <span class="catalog__filters-unit">до</span>
+                                                        <input type="text" name="end-square" min="0" value="80" max="100" maxlength="3" class="catalog__filters-input catalog__filters-input_end">
+                                                    </div>
+                                                </div>
+                                                <div class="catalog__filters-range"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="catalog__filters-caption">Размер, м</div>
+                                        <div class="catalog__filters-content">
+                                            <div class="select">
+                                                <select>
+                                                    <option value="8х9">8х9</option>
+                                                    <option value="12x12">12x12</option>
+                                                    <option value="15x15">15x15</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="catalog__filters-caption">Этажность</div>
+                                        <div class="catalog__filters-labels d-flex flex-wrap">
+                                            <a href="" class="catalog__filters-label active">1 этаж</a>
+                                            <a href="" class="catalog__filters-label">1,5 этажа</a>
+                                            <a href="" class="catalog__filters-label">2 этажа</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-12">
+                                        <div class="catalog__filters-caption">Комплектация</div>
+                                        <div class="catalog__filters-labels d-flex flex-wrap">
+                                            <a href="" class="catalog__filters-label active">с гаражом</a>
+                                            <a href="" class="catalog__filters-label">С террасой</a>
+                                            <a href="" class="catalog__filters-label">С мансардой</a>
+                                            <a href="" class="catalog__filters-label">со вторым светом</a>
+                                            <a href="" class="catalog__filters-label">с эркером</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__filters-bottom d-flex flex-wrap">
+                                <a href="" class="catalog__filters-btn icon-filter">Фильтры</a>
+                                <a href="" class="catalog__filters-btn icon-sort">Сначала новые</a>
                             </div>
                         </div>
                         <div class="catalog__body">

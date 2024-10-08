@@ -1,0 +1,251 @@
+.catalog {
+	padding: 0px 0px 70px 0px;
+	@media (min-width: $md4) {
+		padding: 0px 0px 140px 0px;
+	}
+	// .catalog__header
+	&__header {
+	}
+	// .catalog__caption
+	&__caption {
+		padding: 8px 0 0 0;
+	}
+	// .catalog__title
+	&__title {
+		padding-left: 1em;
+		@media (min-width: $md1) {
+			margin-top: -24px;
+		}
+	}
+	// .catalog__filters
+	&__filters {
+		margin-top: 75px;
+	}
+	// .catalog__filters-header
+	&__filters-header {
+		display: flex;
+		row-gap: 24px;
+		flex-wrap: wrap;
+		& a {
+			flex: 1 1 auto;
+			color: #303030;
+			font-family: $font-sf;
+			font-size: 16px;
+			@media (min-width: $md4) {
+				font-size: 20px;
+			}
+			line-height: 120%;
+			text-transform: uppercase;
+			padding: 0 10px;
+			text-align: left;
+			display: block;
+			padding-bottom: 20px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+			transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+			color: $text;
+			&.active {
+				color: #84a12f;
+				border-bottom: 1px solid #84a12f;
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					color: #84a12f;
+					border-bottom: 1px solid #84a12f;
+				}
+			}
+		}
+	}
+	// .catalog__filters-body
+	&__filters-body {
+		margin-top: 45px;
+	}
+	// .catalog__filters-caption
+	&__filters-caption {
+		color: rgba($color: #303030, $alpha: 0.5);
+		font-family: $font-sf;
+		font-size: 18px;
+		line-height: 120%;
+		text-transform: uppercase;
+		padding: 0 30px;
+	}
+	// .catalog__filters-content
+	&__filters-content {
+		margin-top: 15px;
+	}
+	// .catalog__filters-row
+	&__filters-row {
+	}
+	// .catalog__filters-column
+	&__filters-columns {
+		position: relative;
+		display: flex;
+		border-radius: 50px;
+		background: #fff;
+	}
+	// .catalog__filters-column
+	&__filters-column {
+		position: relative;
+		display: flex;
+	}
+	&__filters-input {
+		line-height: 120%;
+		text-overflow: ellipsis;
+		transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+		width: 100%;
+		background: transparent;
+		&::placeholder {
+			opacity: 1;
+		}
+		padding: em(29, 20) em(10, 20) em(29, 20) em(70, 20);
+		font-size: 14px;
+		@media (min-width: $md5) {
+			font-size: 16px;
+		}
+		@media (min-width: $md4) {
+			font-size: 20px;
+		}
+	}
+	// .catalog__filters-unit
+	&__filters-unit {
+		position: absolute;
+		left: em(35, 20);
+		top: 50%;
+		transform: translateY(-50%);
+		color: #8d8d8d;
+		font-family: $font-sf;
+
+		text-transform: uppercase;
+		font-size: 14px;
+		@media (min-width: $md5) {
+			font-size: 16px;
+		}
+		@media (min-width: $md4) {
+			font-size: 20px;
+		}
+	}
+	// .catalog__filters-range
+	&__filters-range {
+		grid-column: span 2;
+		padding: 0 8px;
+		margin: 0 35px;
+	}
+	// .catalog__filters-labels
+	&__filters-labels {
+		margin-top: 15px;
+		gap: 10px;
+	}
+	// .catalog__filters-label
+	&__filters-label {
+		border-radius: em(50, 20);
+		background: #fff;
+		color: #8d8d8d;
+		font-family: $font-sf;
+		font-size: 16px;
+		line-height: 120%;
+		text-transform: uppercase;
+		padding: em(28, 20) em(35, 20);
+		border: 2px solid #fff;
+		transition: border-color 0.3s ease 0s;
+		&.active {
+			border: 2px solid #84a12f;
+			color: #8d8d8d;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				border: 2px solid #84a12f;
+				color: #8d8d8d;
+			}
+		}
+		@media (min-width: $md4) {
+			font-size: 20px;
+		}
+	}
+	// .catalog__filters-bottom
+	&__filters-bottom {
+		margin-top: 50px;
+		gap: 30px;
+		row-gap: 10px;
+	}
+	// .catalog__filters-btn
+	&__filters-btn {
+		color: #504f4d;
+		font-family: $font-sf;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		gap: em(16, 20);
+		padding: em(16, 20);
+		font-size: 18px;
+		@media (min-width: $md5) {
+			font-size: 20px;
+		}
+		transition: color 0.3s ease 0s;
+		&::before {
+			color: $accent;
+		}
+		&.icon-filter {
+			&::before {
+				font-size: em(26, 20);
+			}
+		}
+	}
+	// .catalog__body
+	&__body {
+		margin-top: 37px;
+	}
+}
+
+.product {
+	background: #fff;
+	padding: 15px;
+	@media (min-width: $md4) {
+		padding: 30px;
+	}
+	// .product__image
+	&__image {
+	}
+	// .product__name
+	&__name {
+		margin-top: em(24, 32);
+		color: #303030;
+		font-weight: 700;
+		line-height: 120%;
+		letter-spacing: em(-1.6, 32);
+		transition: color 0.3s ease 0s;
+		font-size: 26px;
+		@media (min-width: $md2) {
+			font-size: 32px;
+		}
+	}
+	// .product__desc
+	&__desc {
+		margin-top: 19px;
+		font-family: $font-sf;
+		gap: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+		@media (min-width: $md4) {
+			font-size: 18px;
+		}
+		@media (min-width: $md2) {
+			font-size: 24px;
+		}
+	}
+	// .product__desc-item
+	&__desc-item {
+	}
+	// .product__bottom
+	&__bottom {
+		margin-top: 24px;
+		gap: 42px;
+		row-gap: 16px;
+	}
+	// .product__price
+	&__price {
+		color: #333;
+	}
+	// .product__btn
+	&__btn {
+		flex: 1 1 auto;
+	}
+}

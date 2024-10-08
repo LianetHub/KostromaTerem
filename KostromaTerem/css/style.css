@@ -7327,14 +7327,6 @@ input[type=number] {
 }
 
 @font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
   src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
@@ -7351,26 +7343,18 @@ input[type=number] {
 }
 
 @font-face {
-  font-family: "SFUIDisplay";
+  font-family: "icons";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SFUIDisplay";
-  font-display: swap;
-  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Unbounded";
+  font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/Unbounded-Bold.woff2") format("woff2"), url("../fonts/Unbounded-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -7393,6 +7377,22 @@ input[type=number] {
 @font-face {
   font-family: "Unbounded";
   font-display: swap;
+  src: url("../fonts/Unbounded-Bold.woff2") format("woff2"), url("../fonts/Unbounded-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  font-display: swap;
+  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  font-display: swap;
   src: url("../fonts/Unbounded-Regular.woff2") format("woff2"), url("../fonts/Unbounded-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -7402,6 +7402,7 @@ input[type=number] {
 .projects__next::before,
 .projects__prev::before,
 .play-btn::before,
+.select::before,
 [class^=icon-]:before,
 [class*=" icon-"]:before {
   font-family: "icons";
@@ -7420,6 +7421,10 @@ input[type=number] {
   display: block;
 }
 
+.icon-copy:before {
+  content: "\e913";
+}
+
 .icon-arrow:before,
 .slick-arrow:before,
 .projects__next:before,
@@ -7431,7 +7436,8 @@ input[type=number] {
   content: "\e901";
 }
 
-.icon-chevron:before {
+.icon-chevron:before,
+.select:before {
   content: "\e902";
 }
 
@@ -7634,12 +7640,103 @@ body.lock {
   pointer-events: none;
 }
 
+.noUi-connect {
+  background-color: #b0cb1f;
+}
+
+.noUi-target {
+  height: 2px;
+  background-color: #c6c6c6;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-handle {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 50%;
+  background: #b0cb1f;
+  border: 0;
+  outline: 0;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 1rem;
+  height: 1rem;
+  right: -0.5rem;
+}
+
+.select {
+  position: relative;
+}
+
+.select::before {
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 35px;
+  font-size: 15px;
+  -webkit-transform-origin: center 0;
+      -ms-transform-origin: center 0;
+          transform-origin: center 0;
+  pointer-events: none;
+  color: #84a12f;
+}
+
+.select:has(select:focus)::before {
+  -webkit-transform: rotate(180deg) translateY(-50%);
+      -ms-transform: rotate(180deg) translateY(-50%);
+          transform: rotate(180deg) translateY(-50%);
+}
+
+.select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 29px 27px;
+  font-size: 1.25rem;
+  color: #303030;
+  font-family: "SFUIDisplay";
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.select select:focus {
+  border: 1px solid #b0cb1f;
+}
+
 .font-weight-semibold {
   font-weight: 600;
 }
 
 .rounded {
-  border-radius: 50px !important;
+  border-radius: 30px !important;
 }
 
 .rounded-md {
@@ -7685,7 +7782,7 @@ body.lock {
 }
 
 .color-gray {
-  color: #999999;
+  color: #aeaeae;
 }
 
 .play-btn {
@@ -7925,6 +8022,21 @@ body.lock {
   -webkit-transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.form-wrapper::before {
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 28px;
+  color: #b0cb1f;
 }
 
 .form-control {
@@ -9494,6 +9606,244 @@ textarea.form-control {
   font-size: 14px;
 }
 
+.catalog {
+  padding: 0px 0px 70px 0px;
+}
+
+.catalog__caption {
+  padding: 8px 0 0 0;
+}
+
+.catalog__title {
+  padding-left: 1em;
+}
+
+.catalog__filters {
+  margin-top: 75px;
+}
+
+.catalog__filters-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__filters-header a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: #303030;
+  font-family: "SFUIDisplay";
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 0 10px;
+  text-align: left;
+  display: block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+  transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+  color: #303030;
+}
+
+.catalog__filters-header a.active {
+  color: #84a12f;
+  border-bottom: 1px solid #84a12f;
+}
+
+.catalog__filters-body {
+  margin-top: 45px;
+}
+
+.catalog__filters-caption {
+  color: rgba(48, 48, 48, 0.5);
+  font-family: "SFUIDisplay";
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 0 30px;
+}
+
+.catalog__filters-content {
+  margin-top: 15px;
+}
+
+.catalog__filters-columns {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  background: #fff;
+}
+
+.catalog__filters-column {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__filters-input {
+  line-height: 120%;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+  -o-transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+  transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+  width: 100%;
+  background: transparent;
+  padding: 1.45em 0.5em 1.45em 3.5em;
+  font-size: 14px;
+}
+
+.catalog__filters-input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.catalog__filters-input::-moz-placeholder {
+  opacity: 1;
+}
+
+.catalog__filters-input:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.catalog__filters-input::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.catalog__filters-input::placeholder {
+  opacity: 1;
+}
+
+.catalog__filters-unit {
+  position: absolute;
+  left: 1.75em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #8d8d8d;
+  font-family: "SFUIDisplay";
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.catalog__filters-range {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  padding: 0 8px;
+  margin: 0 35px;
+}
+
+.catalog__filters-labels {
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.catalog__filters-label {
+  border-radius: 2.5em;
+  background: #fff;
+  color: #8d8d8d;
+  font-family: "SFUIDisplay";
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 1.4em 1.75em;
+  border: 2px solid #fff;
+  -webkit-transition: border-color 0.3s ease 0s;
+  -o-transition: border-color 0.3s ease 0s;
+  transition: border-color 0.3s ease 0s;
+}
+
+.catalog__filters-label.active {
+  border: 2px solid #84a12f;
+  color: #8d8d8d;
+}
+
+.catalog__filters-bottom {
+  margin-top: 50px;
+  gap: 30px;
+  row-gap: 10px;
+}
+
+.catalog__filters-btn {
+  color: #504f4d;
+  font-family: "SFUIDisplay";
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8em;
+  padding: 0.8em;
+  font-size: 18px;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.catalog__filters-btn::before {
+  color: #b0cb1f;
+}
+
+.catalog__filters-btn.icon-filter::before {
+  font-size: 1.3em;
+}
+
+.catalog__body {
+  margin-top: 37px;
+}
+
+.product {
+  background: #fff;
+  padding: 15px;
+}
+
+.product__name {
+  margin-top: 0.75em;
+  color: #303030;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  font-size: 26px;
+}
+
+.product__desc {
+  margin-top: 19px;
+  font-family: "SFUIDisplay";
+  gap: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product__bottom {
+  margin-top: 24px;
+  gap: 42px;
+  row-gap: 16px;
+}
+
+.product__price {
+  color: #333;
+}
+
+.product__btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 @media (min-width: 575.98px) {
   .container,
   .container-fluid,
@@ -9714,6 +10064,18 @@ textarea.form-control {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(50% - 8px);
             flex: 0 0 calc(50% - 8px);
+  }
+
+  .catalog__filters-input {
+    font-size: 16px;
+  }
+
+  .catalog__filters-unit {
+    font-size: 16px;
+  }
+
+  .catalog__filters-btn {
+    font-size: 20px;
   }
 }
 
@@ -11009,6 +11371,10 @@ textarea.form-control {
             box-sizing: content-box;
   }
 
+  .rounded {
+    border-radius: 50px !important;
+  }
+
   .rounded-md {
     border-radius: 30px !important;
   }
@@ -11285,6 +11651,34 @@ textarea.form-control {
 
   .clients__photos-desc {
     font-size: 16px;
+  }
+
+  .catalog {
+    padding: 0px 0px 140px 0px;
+  }
+
+  .catalog__filters-header a {
+    font-size: 20px;
+  }
+
+  .catalog__filters-input {
+    font-size: 20px;
+  }
+
+  .catalog__filters-unit {
+    font-size: 20px;
+  }
+
+  .catalog__filters-label {
+    font-size: 20px;
+  }
+
+  .product {
+    padding: 30px;
+  }
+
+  .product__desc {
+    font-size: 18px;
   }
 }
 
@@ -13829,6 +14223,14 @@ textarea.form-control {
   .clients__photos-desc {
     font-size: 18px;
   }
+
+  .product__name {
+    font-size: 32px;
+  }
+
+  .product__desc {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -14958,6 +15360,10 @@ textarea.form-control {
   .clients__video img {
     max-width: 940px;
   }
+
+  .catalog__title {
+    margin-top: -24px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -15941,6 +16347,16 @@ textarea.form-control {
         -ms-transform: scaleY(2);
             transform: scaleY(2);
     background: #b0cb1f;
+  }
+
+  .catalog__filters-header a:hover {
+    color: #84a12f;
+    border-bottom: 1px solid #84a12f;
+  }
+
+  .catalog__filters-label:hover {
+    border: 2px solid #84a12f;
+    color: #8d8d8d;
   }
 }
 

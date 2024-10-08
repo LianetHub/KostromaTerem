@@ -126,6 +126,83 @@ $(function () {
 
 
 
+    // range slider
+
+    const rangeFilters = $('.catalog__filters-row');
+
+    if (rangeFilters.length > 0) {
+        rangeFilters.each(function () {
+            const rangeSlider = $(this).find('.catalog__filters-range')[0];
+            const startInput = $(this).find('.catalog__filters-input_start');
+            const endInput = $(this).find('.catalog__filters-input_end');
+            const inputs = [startInput, endInput];
+
+
+            function formatNumber(value) {
+                return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+            }
+
+            function parseNumber(value) {
+                return parseInt(value.replace(/\s/g, ''));
+            }
+
+            function updateMaxLength(input) {
+                const maxLength = parseInt(input.attr('maxlength'));
+                const numLength = maxLength - Math.floor((maxLength - 1) / 4);
+                input.attr('maxlength', numLength);
+            }
+
+            updateMaxLength(startInput);
+            updateMaxLength(endInput);
+
+            startInput.val(formatNumber(startInput.val()));
+            endInput.val(formatNumber(endInput.val()));
+
+            noUiSlider.create(rangeSlider, {
+                start: [parseNumber(startInput.val()), parseNumber(endInput.val())],
+                connect: true,
+
+                range: {
+                    'min': [parseInt(startInput.attr('min'))],
+                    'max': [parseInt(endInput.attr('max')) || 1000000]
+                }
+            });
+
+            rangeSlider.noUiSlider.on('update', function (values, handle) {
+                inputs[handle].val(formatNumber(Math.round(values[handle])));
+            });
+
+            rangeSlider.noUiSlider.on('start', function (values, handle) {
+                inputs[handle].addClass('active');
+            });
+
+            const setRangeSlider = (i, value) => {
+                let arr = [null, null];
+                arr[i] = parseNumber(value);
+                rangeSlider.noUiSlider.set(arr);
+            };
+
+            $.each(inputs, function (index, input) {
+                $(input).on('change', function (e) {
+                    setRangeSlider(index, $(this).val());
+                });
+            });
+
+            $.each(inputs, function (index, input) {
+                $(input).on('input', function (e) {
+                    let value = $(this).val();
+                    value = value.replace(/[^\d]/g, '');
+                    $(this).val(formatNumber(value));
+                    $(this).addClass('active');
+                });
+            });
+
+
+        });
+    }
+
+
+
     // sliders
 
     if ($('.about__slider').length > 0) {

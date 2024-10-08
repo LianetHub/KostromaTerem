@@ -1,64 +1,41 @@
-.select-hidden {
-	display: none;
-	visibility: hidden;
-}
 .select {
-	cursor: pointer;
 	position: relative;
-}
-.select-styled {
-	background: #fff;
-	padding: em(10, 12) em(50, 12) em(10, 12) em(20, 12);
-	border: 1px solid #754c24;
-	border-radius: 12px;
-	color: #754c24;
-	font-size: 12px;
-	white-space: nowrap;
-	user-select: none;
 	&::before {
-		@extend %ic, .icon-triangle;
+		@extend %ic, .icon-chevron;
 		transition: transform 0.3s ease 0s;
 		position: absolute;
-		top: 12px;
-		right: 10px;
-		font-size: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 35px;
+		font-size: 15px;
+		transform-origin: center 0;
+		pointer-events: none;
+		color: #84a12f;
 	}
-
-	&:active,
-	&.active {
+	&:has(select:focus) {
 		&::before {
-			transform: rotate(180deg);
+			transform: rotate(180deg) translateY(-50%);
 		}
 	}
-}
 
-.select-options {
-	display: none;
-	overflow: hidden;
-	position: absolute;
-	top: 100%;
-	right: 0;
-	left: 0;
-	z-index: 999;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	border: 1px solid #754c24;
-	background: #fff;
-	border-radius: 12px;
-	color: #754c24;
-	li {
-		padding: em(15) em(20);
-		font-size: 12px;
-		display: flex;
-		align-items: center;
-		&:hover {
-			background: #42210b;
-			color: #fff;
-		}
-		&.active {
-			background: #42210b;
-			color: #fff;
+	& select {
+		appearance: none;
+		width: 100%;
+		border-radius: 50px;
+		background: #fff;
+		border: 1px solid #fff;
+		padding: 29px 27px;
+
+		font-size: 1.25rem;
+		color: #303030;
+		font-family: $font-sf;
+		font-size: 20px;
+		line-height: 120%;
+		text-transform: uppercase;
+		white-space: nowrap;
+		user-select: none;
+		&:focus {
+			border: 1px solid $accent;
 		}
 	}
 }

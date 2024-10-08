@@ -1,4 +1,15 @@
 .form {
+	&-wrapper {
+		position: relative;
+		&::before {
+			font-size: 26px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 28px;
+			color: $accent;
+		}
+	}
 	// .form-control
 	&-control {
 		background: transparent;

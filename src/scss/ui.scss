@@ -1,12 +1,17 @@
 @import 'modules/config';
 @import 'modules/navigation';
+@import 'modules/rangeSlider';
+@import 'modules/select';
 
 .font-weight-semibold {
 	font-weight: 600;
 }
 
 .rounded {
-	border-radius: 50px !important;
+	border-radius: 30px !important;
+	@media (min-width: $md4) {
+		border-radius: 50px !important;
+	}
 }
 
 .rounded-md {
@@ -105,7 +110,7 @@
 }
 
 .color-gray {
-	color: #999999;
+	color: #aeaeae;
 }
 
 .play-btn {
