@@ -275,6 +275,72 @@ $(function () {
         });
     }
 
+    if ($('.about-page__slider').length > 0) {
+        $('.about-page__slider').slick({
+            infinite: true,
+            arrows: false,
+            autoplay: true,
+            slidesToShow: 3.55,
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2.75,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1.5,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+            ]
+        });
+    }
+
+    if ($('.technologies__slider').length > 0) {
+        $('.technologies__slider').slick({
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 1.84,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1.5,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
+
     class CustomSlider {
         constructor(sliderSelector, options = {}) {
             this.slider = $(sliderSelector);

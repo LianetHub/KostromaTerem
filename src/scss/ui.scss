@@ -27,6 +27,33 @@
 	}
 }
 
+.title-xl {
+	font-weight: 500;
+	line-height: 1.1;
+	text-transform: uppercase;
+	font-size: 32px;
+	@media (min-width: $md5) {
+		font-size: 36px;
+	}
+	@media (min-width: $md4) {
+		font-size: 40px;
+	}
+	@media (min-width: $md3) {
+		font-size: 50px;
+	}
+	@media (min-width: $md2) {
+		font-size: 60px;
+	}
+	@media (min-width: $md1) {
+		font-size: 80px;
+	}
+	@media (min-width: $md0) {
+		font-size: 100px;
+	}
+	@media (min-width: $md-xxl) {
+		font-size: 120px;
+	}
+}
 .title-lg {
 	font-weight: 500;
 	line-height: 1.4;

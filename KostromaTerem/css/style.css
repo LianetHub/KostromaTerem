@@ -7351,18 +7351,18 @@ input[type=number] {
 }
 
 @font-face {
-  font-family: "Unbounded";
+  font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/Unbounded-Medium.woff2") format("woff2"), url("../fonts/Unbounded-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -7377,16 +7377,16 @@ input[type=number] {
 @font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SFUIDisplay";
+  font-family: "Unbounded";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Unbounded-Medium.woff2") format("woff2"), url("../fonts/Unbounded-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -7595,7 +7595,7 @@ body.lock {
   font-family: "SFUIDisplay";
   font-size: 20px;
   font-weight: 300;
-  padding: 92px 0 20px;
+  padding: 48px 0 20px;
 }
 
 .breadcrumbs ul {
@@ -7745,6 +7745,13 @@ body.lock {
 
 .rounded-sm {
   border-radius: 10px !important;
+}
+
+.title-xl {
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 32px;
 }
 
 .title-lg {
@@ -9286,6 +9293,10 @@ textarea.form-control {
 
 .nums__card {
   gap: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nums__card-value {
@@ -9951,6 +9962,154 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
+.about-page {
+  padding: 0 0 60px 0;
+}
+
+.about-page__title {
+  margin-bottom: 0;
+}
+
+.about-page__slider {
+  margin-top: 30px;
+}
+
+.about-page__slider .slick-list {
+  overflow: visible;
+}
+
+.about-page__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.about-page__slide {
+  height: auto;
+  aspect-ratio: 1.25;
+}
+
+.about-page__slide:nth-child(odd) {
+  margin-top: 20px;
+}
+
+.about-page__slide:nth-child(even) {
+  margin-bottom: 20px;
+}
+
+.dignity {
+  padding: 70px 0 30px;
+}
+
+.dignity__body {
+  border-radius: 50px;
+  background: #84a12f;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dignity__image {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.dignity__content {
+  padding: 30px 20px;
+}
+
+.dignity__title {
+  margin-top: 28px;
+}
+
+.dignity__cards {
+  margin-top: 27px;
+}
+
+.dignity__cards .row {
+  --bs-gutter-y: 20px;
+  --bs-gutter-x: 20px;
+}
+
+.dignity__card {
+  background: rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.dignity__card-header {
+  gap: 18px;
+}
+
+.dignity__card-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.dignity__card-title {
+  font-family: "SFUIDisplay";
+}
+
+.dignity__card-desc {
+  margin-top: 46px;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+}
+
+.technologies {
+  padding: 45px 0 70px;
+}
+
+.technologies__caption {
+  padding-top: 10px;
+}
+
+.technologies__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1em;
+}
+
+.technologies__title span {
+  text-indent: 1.2em;
+}
+
+.technologies__text {
+  padding-top: 10px;
+  color: #303030;
+  font-family: "SFUIDisplay";
+  font-size: 20px;
+}
+
+.technologies__slider {
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.technologies__slider .slick-list {
+  overflow: visible;
+}
+
+.technologies__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
 @media (min-width: 360px) {
   .catalog__filters-input {
     font-size: 14px;
@@ -9967,6 +10126,10 @@ textarea.form-control {
   .container-xxl {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .title-xl {
+    font-size: 36px;
   }
 
   .title-lg {
@@ -10216,6 +10379,19 @@ textarea.form-control {
 
   .service__artilce-title {
     margin-bottom: 40px;
+  }
+
+  .dignity__card {
+    border-radius: 30px;
+    padding: 30px;
+  }
+
+  .dignity__card-title {
+    font-size: 20px;
+  }
+
+  .dignity__card-desc {
+    font-size: 20px;
   }
 }
 
@@ -11511,6 +11687,10 @@ textarea.form-control {
             box-sizing: content-box;
   }
 
+  .breadcrumbs {
+    padding: 92px 0 20px;
+  }
+
   .rounded {
     border-radius: 50px !important;
   }
@@ -11521,6 +11701,10 @@ textarea.form-control {
 
   .rounded-sm {
     border-radius: 20px !important;
+  }
+
+  .title-xl {
+    font-size: 40px;
   }
 
   .title-lg {
@@ -11836,6 +12020,26 @@ textarea.form-control {
   .service__artilce {
     background: #fff;
     padding: 42px 50px;
+  }
+
+  .about-page__slide:nth-child(odd) {
+    margin-top: 70px;
+  }
+
+  .about-page__slide:nth-child(even) {
+    margin-bottom: 70px;
+  }
+
+  .dignity__content {
+    padding: 90px 40px;
+  }
+
+  .dignity__card-title {
+    font-size: 24px;
+  }
+
+  .dignity__card-desc {
+    font-size: 24px;
   }
 }
 
@@ -12926,6 +13130,10 @@ textarea.form-control {
             box-sizing: content-box;
   }
 
+  .title-xl {
+    font-size: 50px;
+  }
+
   .title-lg {
     font-size: 34px;
   }
@@ -13065,6 +13273,35 @@ textarea.form-control {
 
   .clients__tabs {
     padding-left: 50px;
+  }
+
+  .about-page__caption {
+    padding: 8px 0 0 0;
+  }
+
+  .about-page__title {
+    margin-top: -8px;
+  }
+
+  .dignity {
+    padding: 140px 0 30px;
+  }
+
+  .dignity__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .dignity__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 46.5%;
+            flex: 0 0 46.5%;
+  }
+
+  .technologies {
+    padding: 90px 0 140px;
   }
 }
 
@@ -14162,6 +14399,10 @@ textarea.form-control {
             box-sizing: content-box;
   }
 
+  .title-xl {
+    font-size: 60px;
+  }
+
   .title-lg {
     font-size: 38px;
   }
@@ -14395,6 +14636,21 @@ textarea.form-control {
 
   .service__artilce {
     padding: 84px 100px;
+  }
+
+  .technologies__text {
+    font-size: 24px;
+    padding-left: 50px;
+    max-width: 600px;
+  }
+
+  .technologies__slider {
+    margin-top: 40px;
+    margin-left: -40px;
+  }
+
+  .technologies__slider .slick-track {
+    gap: 40px;
   }
 }
 
@@ -15493,6 +15749,10 @@ textarea.form-control {
             box-sizing: content-box;
   }
 
+  .title-xl {
+    font-size: 80px;
+  }
+
   .title-lg {
     font-size: 44px;
   }
@@ -15751,6 +16011,10 @@ textarea.form-control {
     max-width: 1500px;
   }
 
+  .title-xl {
+    font-size: 100px;
+  }
+
   .title-lg {
     font-size: 54px;
   }
@@ -15922,6 +16186,10 @@ textarea.form-control {
   }
 
   .nums__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 16px;
   }
 
@@ -15950,6 +16218,10 @@ textarea.form-control {
   .container-xl,
   .container-xxl {
     max-width: 1840px;
+  }
+
+  .title-xl {
+    font-size: 120px;
   }
 
   .title-lg {
@@ -16005,6 +16277,14 @@ textarea.form-control {
 
   .clients__video img {
     max-width: 1360px;
+  }
+
+  .dignity__content {
+    padding: 90px 80px;
+  }
+
+  .dignity__cards {
+    padding-right: 20px;
   }
 }
 
