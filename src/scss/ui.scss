@@ -10,36 +10,86 @@
 }
 
 .rounded-md {
+	border-radius: 20px !important;
 	@media (min-width: $md4) {
 		border-radius: 30px !important;
 	}
 }
 .rounded-sm {
+	border-radius: 10px !important;
 	@media (min-width: $md4) {
 		border-radius: 20px !important;
 	}
 }
 
 .title-lg {
-	font-size: 64px;
 	font-weight: 500;
 	line-height: 1.4;
 	text-transform: uppercase;
+	font-size: 20px;
+	@media (min-width: $md5) {
+		font-size: 24px;
+	}
+	@media (min-width: $md4) {
+		font-size: 26px;
+	}
+	@media (min-width: $md3) {
+		font-size: 34px;
+	}
+	@media (min-width: $md2) {
+		font-size: 38px;
+	}
+	@media (min-width: $md1) {
+		font-size: 44px;
+	}
+	@media (min-width: $md0) {
+		font-size: 54px;
+	}
+	@media (min-width: $md-xxl) {
+		font-size: 64px;
+	}
 }
 
 .title {
-	font-size: 50px;
 	font-weight: 500;
 	line-height: 140%;
 	text-transform: uppercase;
+	font-size: 22px;
+	@media (min-width: $md4) {
+		font-size: 24px;
+	}
+	@media (min-width: $md3) {
+		font-size: 28px;
+	}
+	@media (min-width: $md2) {
+		font-size: 34px;
+	}
+	@media (min-width: $md1) {
+		font-size: 38px;
+	}
+	@media (min-width: $md0) {
+		font-size: 44px;
+	}
+	@media (min-width: $md-xxl) {
+		font-size: 50px;
+	}
 }
 
 .caption {
 	font-family: $font-sf;
-	font-size: 24px;
 	font-weight: 500;
 	opacity: 0.5;
 	text-transform: uppercase;
+	font-size: 18px;
+	@media (min-width: $md5) {
+		font-size: 20px;
+	}
+	@media (min-width: $md3) {
+		font-size: 22px;
+	}
+	@media (min-width: $md0) {
+		font-size: 24px;
+	}
 }
 
 .color-green {
@@ -58,71 +108,6 @@
 	color: #999999;
 }
 
-.back-link {
-	display: inline-flex;
-	align-items: center;
-	color: #999;
-	font-size: 12px;
-	gap: 16px;
-	@media (min-width: $md4) {
-		gap: 20px;
-		font-size: 16px;
-	}
-	font-weight: 700;
-	letter-spacing: 1.6px;
-	text-transform: uppercase;
-	transition: color 0.3s ease 0s;
-	&::before {
-		transform: rotate(90deg);
-	}
-	@media (any-hover: hover) {
-		&:hover {
-			color: $accent;
-		}
-	}
-}
-
-.choise-btn {
-	&.btn {
-		position: fixed;
-		max-width: 520px;
-	}
-	bottom: 16px;
-	left: 16px;
-	right: 16px;
-	@media (min-width: $md5) {
-		bottom: 32px;
-		right: 32px;
-		left: auto;
-	}
-	z-index: 8;
-}
-
-.more-link {
-	border-radius: 50%;
-	background: #f0a721;
-	color: #fff;
-	width: 40px;
-	height: 40px;
-	font-size: 18px;
-
-	@media (min-width: $md4) {
-		width: 60px;
-		height: 60px;
-		font-size: 24px;
-	}
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: background-color 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0.3s ease 0s;
-	@media (any-hover: hover) {
-		&:hover {
-			background: #242424;
-			color: #fff;
-		}
-	}
-}
-
 .play-btn {
 	position: absolute;
 	top: 50%;
@@ -136,16 +121,23 @@
 	align-items: center;
 	color: $accent;
 	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
-	width: 80px;
-	height: 80px;
 	padding-left: 4px;
+	width: 60px;
+	height: 60px;
 	@media (min-width: $md4) {
+		width: 80px;
+		height: 80px;
+	}
+	@media (min-width: $md0) {
 		width: 100px;
 		height: 100px;
 	}
 	&::before {
 		@extend %ic, .icon-play;
-		font-size: 30px;
+		font-size: 20px;
+		@media (min-width: $md0) {
+			font-size: 30px;
+		}
 	}
 	@media (any-hover: hover) {
 		&:hover {
@@ -158,7 +150,8 @@
 .socials {
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	flex-wrap: wrap;
+	gap: 15px;
 	// .socials__item
 	&__item {
 		display: flex;
@@ -166,13 +159,14 @@
 		align-items: center;
 		width: 40px;
 		height: 40px;
-		font-size: 20px;
+		font-size: 18px;
+		flex-shrink: 0;
 		@media (min-width: $md-xxl) {
 			width: 50px;
 			height: 50px;
-			font-size: 24px;
+			font-size: 20px;
 		}
-		border: 1.5px solid;
+		background: #fff;
 		border-radius: 50%;
 		color: $accent;
 		transition: background-color 0.3s ease 0s, color 0.3s ease 0s;

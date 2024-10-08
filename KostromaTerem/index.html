@@ -37,7 +37,7 @@
 <body>
     <div class="wrapper">
         <header class="header header_offset">
-            <div class="container">
+            <div class="container-xxl">
                 <div class="header__wrapper">
                     <div class="header__main d-flex align-items-center">
                         <a href="/" class="header__logo">
@@ -45,8 +45,8 @@
                                 <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип">
                             </picture>
                         </a>
-                        <div class="header__actions d-flex">
-                            <div role="search" class="header__search">
+                        <div class="header__actions d-flex ml-md-0 ml-auto">
+                            <div role="search" class="header__search d-md-block d-none">
                                 <span role="button" class="header__search-btn icon-search"></span>
                                 <input type="text" name="" class="header__search-input" placeholder="Что вы ищите?">
                             </div>
@@ -62,18 +62,18 @@
                             <span></span>
                             <span></span>
                         </span>
-                        <div class="header__contacts d-flex">
+                        <div class="header__contacts d-xxl-flex d-none align-items-center">
                             <a href="" class="header__whatsapp icon-whatsapp"></a>
                             <div class="header__contacts-block d-flex flex-md-column rounded">
                                 <a href="tel:89103731880" class="header__contacts-link">8 (910) 373 18 80</a>
                                 <a href="mailto:info@costroma-terem.ru" class="header__contacts-link sm-link">info@costroma-terem.ru</a>
                             </div>
                         </div>
-                        <a href="" class="header__contacts-feedback btn btn-primary icon-arrow"> Получить консультацию </a>
+                        <a href="" class="header__contacts-feedback d-lg-flex d-none btn btn-primary icon-arrow"> Получить консультацию </a>
                     </div>
-                    <div class="header__menu menu d-flex justify-content-between rounded-sm">
+                    <div class="header__menu menu d-lg-flex justify-content-between rounded-sm">
                         <nav class="menu__body">
-                            <ul class="menu__list d-flex flex-wrap">
+                            <ul class="menu__list d-flex flex-md-wrap flex-md-row flex-column">
                                 <li class="menu__item">
                                     <a href="" class="menu__link">Главная</a>
                                 </li>
@@ -128,7 +128,7 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="menu__contacts d-flex flex-column align-items-end">
+                        <div class="menu__contacts d-flex flex-column align-items-lg-end align-items-start mt-lg-0 mt-4">
                             <div class="menu__contacts-row d-flex">
                                 <a href="" class="menu__contacts-whatsapp icon-whatsapp"></a>
                                 <a href="tel:89103731880" class="menu__contacts-link">8 (910) 373 18 80</a>
@@ -141,11 +141,11 @@
         </header>
         <main class="page">
             <section class="promo">
-                <div class="container">
-                    <div class="promo__main rounded-md d-flex align-items-end">
+                <div class="container-xxl">
+                    <div class="promo__main rounded-md d-flex align-items-md-end flex-md-row justify-content-md-start justify-content-end flex-column">
                         <h1 class="promo__title title-lg"> Производство <span>и строительство</span> деревянных домов <span>под ключ</span>
                         </h1>
-                        <div class="promo__side d-flex ml-auto">
+                        <div class="promo__side d-flex ml-md-auto flex-sm-row flex-column">
                             <a href="" class="promo__side-link icon-arrow d-flex flex-column-reverse justify-content-between rounded-sm"> Узнать подробнее </a>
                             <a href="" class="promo__side-link icon-arrow d-flex flex-column-reverse justify-content-between rounded-sm"> Смотреть проекты </a>
                         </div>
@@ -155,10 +155,10 @@
             <section class="benefits">
                 <div class="container">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-xl-8">
                             <div class="benefits__cards">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-xl-4 col-md-6">
                                         <div class="benefits__card d-flex flex-column h-100 rounded-md">
                                             <div class="benefits__card-icon">
                                                 <img src="img/icons/options.svg" alt="Иконка">
@@ -166,7 +166,7 @@
                                             <div class="benefits__card-text"> Собственное производство полного&nbsp;цикла </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-xl-4 col-md-6">
                                         <div class="benefits__card d-flex flex-column h-100 rounded-md">
                                             <div class="benefits__card-icon">
                                                 <img src="img/icons/worker.svg" alt="Иконка">
@@ -174,7 +174,7 @@
                                             <div class="benefits__card-text"> Квалифицированные бригады <br> мастеров </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-xl-4 col-md-6">
                                         <div class="benefits__card d-flex flex-column h-100 rounded-md">
                                             <div class="benefits__card-icon">
                                                 <img src="img/icons/air-conditioner.svg" alt="Иконка">
@@ -182,7 +182,7 @@
                                             <div class="benefits__card-text"> Строим <br> под ключ <br> круглый&nbsp;год </div>
                                         </div>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-xl-5 col-md-6">
                                         <div class="benefits__card d-flex flex-column h-100 rounded-md">
                                             <div class="benefits__card-icon">
                                                 <img src="img/icons/research-center.svg" alt="Иконка">
@@ -190,7 +190,7 @@
                                             <div class="benefits__card-text"> Используем новейшие <br> технологии в строительстве с&nbsp;соблюдением традиций </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-xl-4 col-md-6">
                                         <div class="benefits__card d-flex flex-column h-100 rounded-md">
                                             <div class="benefits__card-icon">
                                                 <img src="img/icons/environmental.svg" alt="Иконка">
@@ -198,7 +198,7 @@
                                             <div class="benefits__card-text"> Проектирование, индивидуальный подходк заказчику </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-xl-3 col-md-6">
                                         <div class="benefits__card d-flex flex-column h-100 rounded-md">
                                             <div class="benefits__card-icon">
                                                 <img src="img/icons/wealth.svg" alt="Иконка">
@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-xl-4">
                             <div class="benefits__image">
                                 <picture>
                                     <source srcset="img/example.webp" type="image/webp"><img src="img/example.jpg" class="rounded-md" alt="Фото проекта">
@@ -223,10 +223,10 @@
                 <div class="container">
                     <div class="categories__header">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-md-3">
                                 <div class="categories__header-caption caption">[ Категории домов ]</div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-md-9">
                                 <h2 class="categories__header-title title"> Строим дома и бани из <span>бруса и бревна «под ключ»</span>
                                 </h2>
                             </div>
@@ -234,7 +234,7 @@
                     </div>
                     <div class="categories__body">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <a href="" class="project d-flex flex-column">
                                     <span class="project__image rounded-md">
                                         <picture>
@@ -246,7 +246,7 @@
                                     <span class="project__name">Дома из профилированного бруса</span>
                                 </a>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <a href="" class="project d-flex flex-column">
                                     <span class="project__image rounded-md">
                                         <picture>
@@ -258,7 +258,7 @@
                                     <span class="project__name">Дома из клееного бруса</span>
                                 </a>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <a href="" class="project d-flex flex-column">
                                     <span class="project__image rounded-md">
                                         <picture>
@@ -270,7 +270,7 @@
                                     <span class="project__name">Дома из оцилиндрованного бревна</span>
                                 </a>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <a href="" class="project d-flex flex-column">
                                     <span class="project__image rounded-md">
                                         <picture>
@@ -288,7 +288,7 @@
             </section>
             <section class="projects">
                 <div class="container">
-                    <div class="projects__header d-flex">
+                    <div class="projects__header d-flex flex-md-row flex-column">
                         <div class="projects__caption caption">[ популярные проекты ]</div>
                         <h2 class="projects__title title"> Мы собрали для вас <span>популярные проекты</span>
                         </h2>
@@ -405,7 +405,7 @@
             </section>
             <section class="complex">
                 <div class="container">
-                    <div class="complex__columns d-flex align-items-end justify-content-center">
+                    <div class="complex__columns d-flex align-items-sm-end justify-content-sm-center flex-sm-row flex-column">
                         <div class="complex__column d-flex flex-column">
                             <a href="" class="complex__image">
                                 <picture>
@@ -430,7 +430,7 @@
                                 </picture>
                             </a>
                         </div>
-                        <div class="complex__column d-flex flex-column">
+                        <div class="complex__column d-flex flex-column order-sm-0 order-first">
                             <div class="complex__caption caption text-center">[ самый масштабный проект ]</div>
                             <h2 class="complex__title title text-center"> Гостиничный комплекс «Башенки» </h2>
                             <a href="" class="complex__image">
@@ -545,29 +545,29 @@
             </section>
             <div class="nums">
                 <div class="container">
-                    <div class="nums__cards d-flex justify-content-between">
-                        <div class="nums__card d-flex">
+                    <div class="nums__cards d-flex justify-content-between flex-md-nowrap flex-wrap">
+                        <div class="nums__card d-flex flex-xxl-row flex-column">
                             <div class="nums__card-value">25</div>
                             <div class="nums__card-column">
                                 <div class="nums__card-title"> лет на рынке </div>
                                 <div class="nums__card-desc"> С 1999 года возводим дома для&nbsp;наших клиентов </div>
                             </div>
                         </div>
-                        <div class="nums__card d-flex">
+                        <div class="nums__card d-flex flex-xxl-row flex-column">
                             <div class="nums__card-value">>970</div>
                             <div class="nums__card-column">
                                 <div class="nums__card-title"> объектов построено </div>
                                 <div class="nums__card-desc"> Каждый месяц мы вводим в эксплуатацию новые дома </div>
                             </div>
                         </div>
-                        <div class="nums__card d-flex">
+                        <div class="nums__card d-flex flex-xxl-row flex-column">
                             <div class="nums__card-value">>50</div>
                             <div class="nums__card-column">
                                 <div class="nums__card-title"> сотрудников </div>
                                 <div class="nums__card-desc"> Только лучшие талантливые кадры, которых цени </div>
                             </div>
                         </div>
-                        <div class="nums__card d-flex">
+                        <div class="nums__card d-flex flex-xxl-row flex-column">
                             <div class="nums__card-value">4</div>
                             <div class="nums__card-column">
                                 <div class="nums__card-title"> направления </div>
@@ -581,10 +581,10 @@
                 <div class="container">
                     <div class="steps__header">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3">
                                 <div class="steps__caption caption">[ порядок работы ]</div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-lg-9">
                                 <h2 class="steps__title title"> Всего за 6 шагов у вас <span>появится свой дом</span>
                                 </h2>
                             </div>
@@ -592,10 +592,10 @@
                     </div>
                     <div class="steps__body">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-xl-8 col-12">
                                 <div class="steps__content">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-xxl-4 col-xl-6 col-lg-4 col-sm-6">
                                             <div class="steps__card d-flex flex-column rounded-md">
                                                 <div class="steps__card-icon">
                                                     <img src="img/icons/choose.svg" alt="Иконка">
@@ -603,7 +603,7 @@
                                                 <div class="steps__card-text"> Вы выбираете из&nbsp;250 готовых проектов </div>
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-xxl-4 col-xl-6 col-lg-4 col-sm-6">
                                             <div class="steps__card d-flex flex-column rounded-md">
                                                 <div class="steps__card-icon">
                                                     <img src="img/icons/edit.svg" alt="Иконка">
@@ -611,7 +611,7 @@
                                                 <div class="steps__card-text"> Возможны любые доработки проекта </div>
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-xxl-4 col-xl-12 col-lg-4 col-12">
                                             <div class="steps__card d-flex flex-column rounded-md">
                                                 <div class="steps__card-icon">
                                                     <img src="img/icons/payment.svg" alt="Иконка">
@@ -619,7 +619,7 @@
                                                 <div class="steps__card-text"> Построим по&nbsp;вашему проекту </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-xxl-6 col-xl-12 col-lg-6">
                                             <div class="steps__more">
                                                 <div class="steps__more-image">
                                                     <picture>
@@ -630,7 +630,7 @@
                                                 <a href="" class="steps__more-btn btn btn-secondary btn-sm icon-arrow">Смотреть проекты</a>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-xxl-6 col-xl-12 col-lg-6">
                                             <div class="steps__more">
                                                 <div class="steps__more-image">
                                                     <picture>
@@ -644,7 +644,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-12">
                                 <ul class="steps__list">
                                     <li class="steps__item">
                                         <a href="" class="steps__link d-flex align-items-center">
@@ -744,10 +744,10 @@
                 <div class="container">
                     <div class="clients__header">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-md-3">
                                 <div class="clients__caption caption"> [ отзывы ] </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-md-9">
                                 <h2 class="clients__title title"> Что о нас <span>говорят клиенты</span>
                                 </h2>
                             </div>
@@ -755,7 +755,7 @@
                     </div>
                     <div class="clients__body">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3 order-lg-0 order-1">
                                 <div class="clients__controls active">
                                     <span role="button" class="clients__videos-prev slick-arrow slick-prev"></span>
                                     <span role="button" class="clients__videos-next slick-arrow slick-next"></span>
@@ -765,13 +765,13 @@
                                     <span role="button" class="clients__photos-next slick-arrow slick-next"></span>
                                 </div>
                             </div>
-                            <div class="col-9">
-                                <div class="clients__tabs d-flex text-center">
+                            <div class="col-lg-9">
+                                <div class="clients__tabs d-flex text-center ">
                                     <span role="button" class="clients__tabs-btn active">видео отзывы</span>
                                     <span role="button" class="clients__tabs-btn">фото отзывы</span>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 order-1">
                                 <div class="clients__tabs-content active">
                                     <div class="clients__videos clients-slider" dir="rtl">
                                         <div class="clients__video">
@@ -872,56 +872,59 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="footer__feedback d-flex">
+                <div class="footer__feedback d-lg-flex align-items-lg-end">
                     <div class="footer__feedback-main">
-                        <h2 class="footer__feedback-title title"> Заказать обратный звонок </h2>
-                        <p class="mt-4">Оставьте свои контктные данные и наш специалист перезвонит Вам в течение 15-ти минут</p>
-                        <div role="form" class="footer__form">
+                        <h2 class="footer__feedback-title title"> Заказать <span>обратный звонок</span>
+                        </h2>
+                        <p class="footer__feedback-subtitle">Оставьте свои контктные данные и наш специалист перезвонит Вам в течение 15-ти минут</p>
+                        <div role="form" class="footer__form d-flex flex-column">
                             <input type="text" name="name" class="form-control" placeholder="Ваше имя">
                             <input type="text" name="tel" class="form-control" placeholder="+ 7 (___)-___-__-__">
-                            <span role="button" class="btn btn-primary icon-arrow"> Заказать звонок </span>
+                            <span role="button" class="btn btn-secondary text-center icon-arrow"> Заказать звонок </span>
                             <div class="footer__form-privacy text-center"> Нажимая кнопку «Заказать обратный звонок», Вы даете согласие на обработку своих персональных данных. </div>
                         </div>
                     </div>
-                    <div class="footer__feedback-image">
+                    <div class="footer__feedback-image d-lg-block d-none">
                         <picture>
                             <source srcset="img/feedback.webp" type="image/webp"><img src="img/feedback.png" alt="Изображение дома">
                         </picture>
                     </div>
                 </div>
-                <div class="footer__contacts d-flex">
+                <div class="footer__contacts d-flex flex-md-row flex-column">
                     <div class="footer__contacts-caption caption">[ Контакты ]</div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-name"> Сесин Евгений Владимирович </div>
-                                <a href="tel:89103731880" class="footer__card-link">8 (910) 373 18 80</a>
-                                <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
+                    <div class="footer__contacts-body">
+                        <div class="row">
+                            <div class="col-xxl-3 col-lg-6">
+                                <div class="footer__card d-flex flex-column rounded-md">
+                                    <div class="footer__card-name"> Сесин Евгений Владимирович </div>
+                                    <a href="tel:89103731880" class="footer__card-link">8 (910) 373 18 80</a>
+                                    <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-name"> Пантелеев Алексей Алексеевич </div>
-                                <a href="tel:89109225525" class="footer__card-link">8 (910) 922 55 25</a>
-                                <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
+                            <div class="col-xxl-3 col-lg-6">
+                                <div class="footer__card d-flex flex-column rounded-md">
+                                    <div class="footer__card-name"> Пантелеев Алексей Алексеевич </div>
+                                    <a href="tel:89109225525" class="footer__card-link">8 (910) 922 55 25</a>
+                                    <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-caption"> Юридический и фактический адрес </div>
-                                <address class="footer__card-address">Костромская область, г. Чухлома, ул. Доктора Малыгина д.7</address>
+                            <div class="col-xxl-3 col-lg-6">
+                                <div class="footer__card d-flex flex-column rounded-md">
+                                    <div class="footer__card-caption"> Юридический и фактический адрес </div>
+                                    <address class="footer__card-address">Костромская область, <br> г. Чухлома, ул. Доктора Малыгина д.7</address>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="footer__card d-flex flex-column rounded-md">
-                                <div class="footer__card-caption"> Офис в Москве </div>
-                                <address class="footer__card-address">123423, Москва, ул. Народного ополчения, д. 34, стр. 1</address>
+                            <div class="col-xxl-3 col-lg-6">
+                                <div class="footer__card d-flex flex-column rounded-md">
+                                    <div class="footer__card-caption"> Офис в Москве </div>
+                                    <address class="footer__card-address">123423, Москва, ул. Народного ополчения, д. 34, стр. 1</address>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer__bottom d-flex">
-                    <div class="footer__column d-flex flex-column">
+                <div class="footer__bottom d-flex flex-md-row flex-column">
+                    <div class="footer__column d-flex flex-md-column flex-row order-md-0 order-last justify-content-between mt-md-0 mt-4">
                         <a href="/" class="footer__logo">
                             <picture>
                                 <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип">
@@ -932,24 +935,24 @@
                         </a>
                     </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-12">
                             <div class="footer__menu">
                                 <div class="footer__menu-caption">Строительство</div>
                                 <nav class="footer__menu-nav">
                                     <ul class="footer__menu-list row">
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Проектирование дома</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Усадка</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Сооружение фундамента</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Отделка</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Производство домкомплекта</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Обработка антисептиком</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Сборка на ускадку</a></li>
-                                        <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Теплый угол</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Проектирование дома</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Усадка</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Сооружение фундамента</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Отделка</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Производство домкомплекта</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Обработка антисептиком</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Сборка на ускадку</a></li>
+                                        <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Теплый угол</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3 col-md-6">
                             <div class="footer__menu">
                                 <div class="footer__menu-caption">Компания</div>
                                 <nav class="footer__menu-nav">
@@ -962,7 +965,7 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3 col-md-6">
                             <div class="footer__menu">
                                 <div class="footer__menu-caption">Соц. сети</div>
                                 <div class="footer__socials socials ">
@@ -982,8 +985,7 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <!-- plugins -->
+    </div> <!-- plugins -->
     <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

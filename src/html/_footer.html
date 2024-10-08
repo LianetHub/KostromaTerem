@@ -1,16 +1,16 @@
 <footer class="footer">
     <div class="container">
-        <div class="footer__feedback d-flex">
+        <div class="footer__feedback d-lg-flex align-items-lg-end">
             <div class="footer__feedback-main">
                 <h2 class="footer__feedback-title title">
                     Заказать
-                    обратный звонок
+                    <span>обратный звонок</span>
                 </h2>
-                <p class="mt-4">Оставьте свои контктные данные и наш специалист перезвонит Вам в течение 15-ти минут</p>
-                <div role="form" class="footer__form">
+                <p class="footer__feedback-subtitle">Оставьте свои контктные данные и наш специалист перезвонит Вам в течение 15-ти минут</p>
+                <div role="form" class="footer__form d-flex flex-column">
                     <input type="text" name="name" class="form-control" placeholder="Ваше имя">
                     <input type="text" name="tel" class="form-control" placeholder="+ 7 (___)-___-__-__">
-                    <span role="button" class="btn btn-primary icon-arrow">
+                    <span role="button" class="btn btn-secondary text-center icon-arrow">
                         Заказать звонок
                     </span>
                     <div class="footer__form-privacy text-center">
@@ -19,51 +19,53 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__feedback-image">
+            <div class="footer__feedback-image d-lg-block d-none">
                 <img src="@img/feedback.png" alt="Изображение дома">
             </div>
         </div>
-        <div class="footer__contacts d-flex">
+        <div class="footer__contacts d-flex flex-md-row flex-column">
             <div class="footer__contacts-caption caption">[ Контакты ]</div>
-            <div class="row">
-                <div class="col-3">
-                    <div class="footer__card d-flex flex-column rounded-md">
-                        <div class="footer__card-name">
-                            Сесин Евгений Владимирович
+            <div class="footer__contacts-body">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-6">
+                        <div class="footer__card d-flex flex-column rounded-md">
+                            <div class="footer__card-name">
+                                Сесин Евгений Владимирович
+                            </div>
+                            <a href="tel:89103731880" class="footer__card-link">8 (910) 373 18 80</a>
+                            <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
                         </div>
-                        <a href="tel:89103731880" class="footer__card-link">8 (910) 373 18 80</a>
-                        <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="footer__card d-flex flex-column rounded-md">
-                        <div class="footer__card-name">
-                            Пантелеев Алексей Алексеевич
+                    <div class="col-xxl-3 col-lg-6">
+                        <div class="footer__card d-flex flex-column rounded-md">
+                            <div class="footer__card-name">
+                                Пантелеев Алексей Алексеевич
+                            </div>
+                            <a href="tel:89109225525" class="footer__card-link">8 (910) 922 55 25</a>
+                            <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
                         </div>
-                        <a href="tel:89109225525" class="footer__card-link">8 (910) 922 55 25</a>
-                        <div class="footer__card-worktime mt-auto">(с 9.00 до 21.00 без выходных)</div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="footer__card d-flex flex-column rounded-md">
-                        <div class="footer__card-caption">
-                            Юридический и фактический адрес
+                    <div class="col-xxl-3 col-lg-6">
+                        <div class="footer__card d-flex flex-column rounded-md">
+                            <div class="footer__card-caption">
+                                Юридический и фактический адрес
+                            </div>
+                            <address class="footer__card-address">Костромская область, <br> г. Чухлома, ул. Доктора Малыгина д.7</address>
                         </div>
-                        <address class="footer__card-address">Костромская область, г. Чухлома, ул. Доктора Малыгина д.7</address>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="footer__card d-flex flex-column rounded-md">
-                        <div class="footer__card-caption">
-                            Офис в Москве
+                    <div class="col-xxl-3 col-lg-6">
+                        <div class="footer__card d-flex flex-column rounded-md">
+                            <div class="footer__card-caption">
+                                Офис в Москве
+                            </div>
+                            <address class="footer__card-address">123423, Москва, ул. Народного ополчения, д. 34, стр. 1</address>
                         </div>
-                        <address class="footer__card-address">123423, Москва, ул. Народного ополчения, д. 34, стр. 1</address>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer__bottom d-flex">
-            <div class="footer__column d-flex flex-column">
+        <div class="footer__bottom d-flex flex-md-row flex-column">
+            <div class="footer__column d-flex flex-md-column flex-row order-md-0 order-last justify-content-between mt-md-0 mt-4">
                 <a href="/" class="footer__logo">
                     <img src="@img/logo.png" alt="Логотип">
                 </a>
@@ -72,24 +74,24 @@
                 </a>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <div class="footer__menu">
                         <div class="footer__menu-caption">Строительство</div>
                         <nav class="footer__menu-nav">
                             <ul class="footer__menu-list row">
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Проектирование дома</a></li>
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Усадка</a></li>
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Сооружение фундамента</a></li>
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Отделка</a></li>
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Производство домкомплекта</a></li>
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Обработка антисептиком</a></li>
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Сборка на ускадку</a></li>
-                                <li class="footer__menu-item col-6"><a href="" class="footer__menu-link">Теплый угол</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Проектирование дома</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Усадка</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Сооружение фундамента</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Отделка</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Производство домкомплекта</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Обработка антисептиком</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Сборка на ускадку</a></li>
+                                <li class="footer__menu-item col-xxl-6 col-12"><a href="" class="footer__menu-link">Теплый угол</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="footer__menu">
                         <div class="footer__menu-caption">Компания</div>
                         <nav class="footer__menu-nav">
@@ -102,7 +104,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="footer__menu">
                         <div class="footer__menu-caption">Соц. сети</div>
                         <div class="footer__socials socials ">

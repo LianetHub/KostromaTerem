@@ -11,15 +11,15 @@
             })
             <main class="page">
                 <section class="promo">
-                    <div class="container">
-                        <div class="promo__main rounded-md d-flex align-items-end">
+                    <div class="container-xxl">
+                        <div class="promo__main rounded-md d-flex align-items-md-end flex-md-row justify-content-md-start justify-content-end flex-column">
                             <h1 class="promo__title title-lg">
                                 Производство
                                 <span>и строительство</span>
                                 деревянных домов
                                 <span>под ключ</span>
                             </h1>
-                            <div class="promo__side d-flex ml-auto">
+                            <div class="promo__side d-flex ml-md-auto flex-sm-row flex-column">
                                 <a href="" class="promo__side-link icon-arrow d-flex flex-column-reverse justify-content-between rounded-sm">
                                     Узнать подробнее
                                 </a>
@@ -35,10 +35,10 @@
                     <div class="container">
                         <div class="categories__header">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-md-3">
                                     <div class="categories__header-caption caption">[ Категории домов ]</div>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-md-9">
                                     <h2 class="categories__header-title title">
                                         Строим дома и бани из
                                         <span>бруса и бревна «под ключ»</span>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="categories__body">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xl-6">
                                     <a href="" class="project d-flex flex-column">
                                         <span class="project__image rounded-md">
                                             <img src="@img/projects/01.jpg" class="cover-image" alt="Фото проекта">
@@ -58,7 +58,7 @@
                                         <span class="project__name">Дома из профилированного бруса</span>
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-xl-6">
                                     <a href="" class="project d-flex flex-column">
                                         <span class="project__image rounded-md">
                                             <img src="@img/projects/02.jpg" class="cover-image" alt="Фото проекта">
@@ -68,7 +68,7 @@
                                         <span class="project__name">Дома из клееного бруса</span>
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-xl-6">
                                     <a href="" class="project d-flex flex-column">
                                         <span class="project__image rounded-md">
                                             <img src="@img/projects/03.jpg" class="cover-image" alt="Фото проекта">
@@ -78,7 +78,7 @@
                                         <span class="project__name">Дома из оцилиндрованного бревна</span>
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-xl-6">
                                     <a href="" class="project d-flex flex-column">
                                         <span class="project__image rounded-md">
                                             <img src="@img/projects/04.jpg" class="cover-image" alt="Фото проекта">
@@ -94,7 +94,7 @@
                 </section>
                 <section class="projects">
                     <div class="container">
-                        <div class="projects__header d-flex">
+                        <div class="projects__header d-flex flex-md-row flex-column">
                             <div class="projects__caption caption">[ популярные проекты ]</div>
                             <h2 class="projects__title title">
                                 Мы собрали для вас
@@ -234,7 +234,7 @@
                 </section>
                 <section class="complex">
                     <div class="container">
-                        <div class="complex__columns d-flex align-items-end justify-content-center">
+                        <div class="complex__columns d-flex align-items-sm-end justify-content-sm-center flex-sm-row flex-column">
                             <div class="complex__column d-flex flex-column">
                                 <a href="" class="complex__image">
                                     <img src="@img/complex/09.jpg" class="cover-image rounded-md" alt="Фото проекта">
@@ -251,7 +251,7 @@
                                     <img src="@img/complex/06.jpg" class="cover-image rounded-md" alt="Фото проекта">
                                 </a>
                             </div>
-                            <div class="complex__column d-flex flex-column">
+                            <div class="complex__column d-flex flex-column order-sm-0 order-first">
                                 <div class="complex__caption caption text-center">[ самый масштабный проект ]</div>
                                 <h2 class="complex__title title text-center">
                                     Гостиничный комплекс «Башенки»
@@ -342,7 +342,6 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
                 @@include('html/_nums.html', {})
                 @@include('html/_steps.html', {})
@@ -350,7 +349,6 @@
             </main>
             @@include('html/_footer.html', {})
         </div>
-        <!-- @@include('html/_popup.html', {}) -->
         @@include('html/_js.html', {})
     </body>
 </html>

@@ -82,7 +82,7 @@ $(function () {
 
 
         // submenu
-        if ($target.is('.menu__link') && $('body').hasClass('_touch')) {
+        if ($target.is('.menu__link')) {
 
             let $submenu = $target.next();
             if ($submenu.length > 0) {
@@ -130,9 +130,10 @@ $(function () {
 
     if ($('.about__slider').length > 0) {
         $('.about__slider').slick({
-            infinite: false,
+            infinite: true,
             variableWidth: true,
             arrows: false,
+            autoplay: true,
             responsive: [
                 {
                     breakpoint: 576,
@@ -154,7 +155,14 @@ $(function () {
             rtl: true,
             responsive: [
                 {
-                    breakpoint: 576,
+                    breakpoint: 992,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 768,
                     settings: {
                         variableWidth: false,
                         slidesToShow: 1,
@@ -173,7 +181,14 @@ $(function () {
             rtl: true,
             responsive: [
                 {
-                    breakpoint: 576,
+                    breakpoint: 1400,
+                    settings: {
+                        variableWidth: false,
+                        slidesToShow: 1.5,
+                    }
+                },
+                {
+                    breakpoint: 768,
                     settings: {
                         variableWidth: false,
                         slidesToShow: 1,
@@ -194,18 +209,22 @@ $(function () {
             this.slideMargin = options.slideMargin || 0;
             this.slideWidth = this.calculateSlideWidth();
             this.onSlideChangeCallback = options.onSlideChange || (() => { });
-
             this.init();
         }
 
         calculateSlideWidth() {
             const windowWidth = $(window).width();
-            if (windowWidth < 768) {
-                return 300;
-            } else if (windowWidth < 1024) {
-                return 400;
-            } else {
-                return 500;
+            switch (true) {
+                case (windowWidth < 576):
+                    return windowWidth - 2 * this.slideMargin;
+                case (windowWidth < 768):
+                    return 240;
+                case (windowWidth < 992):
+                    return 350;
+                case (windowWidth < 1200):
+                    return 400;
+                default:
+                    return 500;
             }
         }
 
@@ -219,7 +238,6 @@ $(function () {
         }
 
         init() {
-            this.slides.css('margin', `0 ${this.slideMargin / 2}px`);
             this.slides.css('margin', `0 ${this.slideMargin / 2}px`);
             this.nextBtn.on('click', () => this.nextSlide());
             this.prevBtn.on('click', () => this.prevSlide());
@@ -253,6 +271,7 @@ $(function () {
             return this.currentIndex;
         }
     }
+
 
     if ($('.projects__slider').length > 0) {
         new CustomSlider('.projects__slider', {
