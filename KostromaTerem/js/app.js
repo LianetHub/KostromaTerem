@@ -136,6 +136,14 @@ $(function () {
             }
         }
 
+        // clients tabs
+        if ($target.is('.clients__tabs-btn')) {
+            $target.addClass('active').siblings().removeClass('active');
+            $('.clients__tabs-content').eq($target.index()).addClass('active').siblings().removeClass('active');
+            $('.clients__controls').eq($target.index()).addClass('active').siblings().removeClass('active');
+            $('.clients-slider.slick-initialized').slick("setPosition");
+        }
+
 
     });
 
