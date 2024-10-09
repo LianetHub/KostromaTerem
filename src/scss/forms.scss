@@ -27,8 +27,16 @@
 		@media (min-width: $md3) {
 			font-size: 20px;
 		}
+		&.white {
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			color: #fff !important;
+			&::placeholder {
+				opacity: 0.5;
+			}
+		}
 		&::placeholder {
 			opacity: 0.5;
+			color: inherit;
 		}
 		&:focus {
 			outline: none;
@@ -47,7 +55,7 @@
 }
 
 textarea.form-control {
-	height: 180px !important;
+	height: 140px !important;
 	border-radius: 30px;
 	@media (min-width: $md2) {
 		border-radius: 50px;
@@ -55,6 +63,43 @@ textarea.form-control {
 	padding-block: 16px;
 	resize: none;
 }
+
+.file {
+	display: block;
+	// .file__input
+	&__input {
+	}
+	// .file__btn
+	&__btn {
+		width: 100%;
+		display: flex;
+		&.btn {
+			padding-left: 60px;
+			justify-content: center;
+			text-align: center;
+			font-size: 20px;
+			font-family: $font-sf;
+			&::before {
+				order: -1;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				bottom: 5px;
+				margin: 0;
+				font-size: 24px;
+			}
+		}
+	}
+}
+.form__privacy {
+	color: rgba($color: #fff, $alpha: 0.8);
+	font-family: $font-sf;
+	font-size: 16px;
+	align-self: center;
+	font-weight: 300;
+	line-height: math.div(25, 16);
+}
+
 // <BUTTONS (a.btn+tab)>==============================
 
 .btn {
@@ -151,6 +196,26 @@ textarea.form-control {
 		&:not(:disabled):not(.disabled):active {
 			background-color: darken($color: $accent, $amount: 15);
 			border-color: darken($color: $accent, $amount: 15);
+		}
+	}
+	&.btn-white {
+		background: #fff;
+		border: 0;
+		color: #303030;
+		&::before {
+			background: #84a12f;
+			color: #fff;
+		}
+		&:hover {
+			background: darken($color: #fff, $amount: 10);
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 0.2rem rgba($color: #fff, $alpha: 0.5);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color: darken($color: #fff, $amount: 15);
+			border-color: darken($color: #fff, $amount: 15);
 		}
 	}
 

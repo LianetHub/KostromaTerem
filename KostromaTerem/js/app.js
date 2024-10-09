@@ -80,6 +80,14 @@ $(function () {
             $("body").removeClass("lock-menu");
         }
 
+        if ($target.is('.complectation__spoller')) {
+            $target.toggleClass('active').next().slideToggle()
+        }
+
+        if ($target.is('.similar__item-title')) {
+            $target.toggleClass('active').next().slideToggle();
+        }
+
 
         // submenu
         if ($target.is('.menu__link')) {
@@ -106,13 +114,28 @@ $(function () {
         }
 
 
-        // clients tabs
-        if ($target.is('.clients__tabs-btn')) {
-            $target.addClass('active').siblings().removeClass('active');
-            $('.clients__tabs-content').eq($target.index()).addClass('active').siblings().removeClass('active');
-            $('.clients__controls').eq($target.index()).addClass('active').siblings().removeClass('active');
-            $('.clients-slider.slick-initialized').slick("setPosition");
+        //  visual block 
+        if ($target.is('.visual__point')) {
+            let $currentAction = $target.parent(".visual__item");
+            let $currentList = $target.next(".visual__info");
+
+            if ($target.hasClass('active')) {
+                $currentAction.removeClass('active');
+                $target.removeClass('active');
+                $currentList.slideUp();
+            } else {
+
+                $('.visual__item').removeClass('active');
+                $('.visual__point').removeClass('active');
+                $('.visual__info').slideUp();
+
+
+                $currentAction.addClass('active');
+                $target.addClass('active');
+                $currentList.slideDown();
+            }
         }
+
 
     });
 
@@ -338,6 +361,17 @@ $(function () {
                     }
                 }
             ]
+        });
+    }
+
+    if ($('.product-card__slider').length > 0) {
+        $('.product-card__slider').slick({
+            slidesToShow: 1,
+            arrows: true,
+            dots: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
         });
     }
 
