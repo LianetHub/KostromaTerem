@@ -8,8 +8,6 @@
 	}
 	// .product-card__actions
 	&__actions {
-		display: flex;
-		margin-left: auto;
 	}
 	// .product-card__action
 	&__action {
@@ -259,7 +257,7 @@
 		margin-top: 20px;
 		border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
 		padding-top: 20px;
-		@media (min-width: $md0) {
+		@media (min-width: $md-xxl) {
 			.product-card__labels {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
@@ -342,7 +340,10 @@
 		@media (max-width: $md3) {
 			border-radius: 30px;
 			padding: 10px 20px;
-			zoom: 0.5;
+			zoom: 0.75;
+		}
+		@media (max-width: $md4) {
+			display: none;
 		}
 	}
 	// .complectation__option-name
@@ -378,7 +379,7 @@
 		align-items: center;
 		flex-direction: column;
 		gap: 20px;
-		@media (min-width: $md5) {
+		@media (min-width: $md4) {
 			flex-direction: row;
 		}
 		@media (min-width: $md3) {
@@ -398,24 +399,43 @@
 	// .complectation__value
 	&__value {
 		margin: 0 auto;
-		width: 80px;
-		height: 30px;
-		font-size: 20px;
-		@media (min-width: $md3) {
-			width: 154px;
-			height: 60px;
-			font-size: 30px;
-		}
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: #f9f9f9;
-		border-radius: 40px;
+		gap: 20px;
+		&::before {
+			display: block;
+			background: #f9f9f9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 40px;
+			width: 80px;
+			height: 30px;
+			font-size: 20px;
+			@media (min-width: $md3) {
+				width: 154px;
+				height: 60px;
+				font-size: 30px;
+			}
+		}
 		&.icon-close {
-			color: #ea6f6f;
+			&::before {
+				color: #ea6f6f;
+			}
 		}
 		&.icon-check {
-			color: #84a12f;
+			&::before {
+				color: #84a12f;
+			}
+		}
+		&::after {
+			content: attr(data-label);
+			display: none;
+			font-size: 10px;
+			@media (max-width: $md4) {
+				display: block;
+			}
 		}
 	}
 	// .complectation__spollers
@@ -524,11 +544,30 @@
 	}
 	// .extras__item
 	&__item {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	// .extras__item-checkbox
+	&__item-checkbox {
+		&:checked {
+			& + .extras__item-btn {
+				&::before {
+					color: #fff;
+				}
+			}
+		}
+	}
+	// .extras__item-btn
+	&__item-btn {
+		display: block;
 		border-radius: 60px;
 		background: #fff;
 		padding: 25px 30px;
 		gap: 20px;
 		width: 100%;
+		cursor: pointer;
 		&::before {
 			width: 30px;
 			height: 30px;
@@ -540,9 +579,6 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-		}
-		&:not(:last-child) {
-			margin-bottom: 20px;
 		}
 	}
 	// .extras__item-title
