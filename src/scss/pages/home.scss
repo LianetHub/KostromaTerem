@@ -732,7 +732,7 @@
 				gap: 40px;
 			}
 			& > * {
-				max-width: 100%;
+				width: 100%;
 				&:nth-child(5n + 1) {
 					@media (min-width: $md5) {
 						align-self: flex-end;
@@ -763,6 +763,7 @@
 				&:nth-child(5n + 5) {
 					@media (min-width: $md5) {
 						margin-top: 15px;
+						max-width: 450px;
 					}
 					@media (min-width: $md4) {
 						margin-top: 35px;
