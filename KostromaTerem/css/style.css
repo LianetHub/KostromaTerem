@@ -9,14 +9,6 @@
 @font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SFUIDisplay";
-  font-display: swap;
   src: url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -25,8 +17,16 @@
 @font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  font-display: swap;
+  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -41,16 +41,8 @@
 @font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Unbounded";
-  font-display: swap;
-  src: url("../fonts/Unbounded-Regular.woff2") format("woff2"), url("../fonts/Unbounded-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -67,6 +59,14 @@
   font-display: swap;
   src: url("../fonts/Unbounded-Medium.woff2") format("woff2"), url("../fonts/Unbounded-Medium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  font-display: swap;
+  src: url("../fonts/Unbounded-Regular.woff2") format("woff2"), url("../fonts/Unbounded-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -210,8 +210,8 @@ body.lock {
 .container-lg,
 .container-xl,
 .container-xxl {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container {
@@ -452,7 +452,7 @@ body.lock {
   font-weight: 500;
   opacity: 0.5;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .color-green {
@@ -1008,7 +1008,7 @@ textarea.form-control {
   contain: layout;
   -webkit-transform: translate3d(0, 0, -1px);
           transform: translate3d(0, 0, -1px);
-  padding: 20px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 .header.scroll .header__logo {
@@ -1027,11 +1027,11 @@ textarea.form-control {
 .header.header_offset {
   -webkit-transform: translate3d(0, 0px, -1px);
           transform: translate3d(0, 0px, -1px);
-  margin-bottom: -50px;
+  margin-bottom: -60px;
 }
 
 .header.header_offset .header__main {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .header__wrapper {
@@ -1044,7 +1044,7 @@ textarea.form-control {
 }
 
 .header__logo {
-  max-width: 65px;
+  max-width: 70px;
 }
 
 .header__search {
@@ -1369,8 +1369,9 @@ textarea.form-control {
   background: rgba(255, 255, 255, 0.8);
   color: #303030;
   z-index: 11;
-  width: 40px;
+  width: 80px;
   height: 40px;
+  margin: 0px 0px 0px auto;
 }
 
 .icon-menu span {
@@ -1389,7 +1390,7 @@ textarea.form-control {
   content: "";
   display: block;
   height: 2px;
-  width: 20px;
+  width: 40px;
   pointer-events: none;
   background: currentColor;
   -webkit-transition: width 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
@@ -1614,21 +1615,32 @@ textarea.form-control {
   overflow-x: clip;
 }
 
+.no-webp .promo__main {
+  background: url("../img/banner-mobile.jpg") center 0/cover no-repeat, #303030; }
+
+.promo__main {
+  color: #fff;
+  width: 100%;
+  min-height: 440px;
+  padding: 258px 20px 20px;
+}
+
 .promo__title span:last-child {
   text-indent: 0.9375em;
 }
 
 .promo__side {
   gap: 10px;
+  margin-top: 17px;
 }
 
 .promo__side-link {
   text-transform: uppercase;
-  padding: 1.4444444444em 1.1111111111em 1.1111111111em 1.6666666667em;
   -webkit-transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
-  height: 7.7777777778em;
+  font-size: 14px;
+  padding: 1em 1.4285714286em;
 }
 
 .promo__side-link::before {
@@ -1677,7 +1689,7 @@ textarea.form-control {
 }
 
 .benefits {
-  padding: 20px 0 0 0;
+  padding: 30px 0;
 }
 
 .benefits + .categories {
@@ -1694,13 +1706,14 @@ textarea.form-control {
 
 .benefits__cards .row {
   --bs-gutter-x: 20px;
-  --bs-gutter-y: 20px;
+  --bs-gutter-y: 10px;
 }
 
 .benefits__card {
-  gap: 23px;
   background: #fff;
-  padding: 20px 20px 25px 30px;
+  padding: 20px 20px 20px 20px;
+  gap: 12px;
+  min-height: 114px;
 }
 
 .benefits__card-icon {
@@ -1736,21 +1749,23 @@ textarea.form-control {
 .categories {
   background: #fff;
   border-radius: 30px 30px 0 0;
-  padding: 35px 0 25px;
+  padding: 50px 20px 25px;
 }
 
 .categories__header {
   gap: 10px;
 }
 
-.categories__header-caption {
-  padding-top: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+.categories__header .row {
+  --bs-gutter-y: 20px;
 }
 
 .categories__body {
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.categories__body .row {
+  --bs-gutter-y: 28px;
 }
 
 .project__image {
@@ -1774,9 +1789,9 @@ textarea.form-control {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  padding: 5px 15px;
+  padding: 7px 18px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 14px;
   top: 10px;
   left: 10px;
 }
@@ -1805,8 +1820,8 @@ textarea.form-control {
   -o-transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
-  bottom: 16px;
-  right: 16px;
+  bottom: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
   font-size: 12px;
@@ -1825,11 +1840,12 @@ textarea.form-control {
 .projects {
   background: #fff;
   position: relative;
-  padding: 30px 0 70px;
   border-radius: 0 0 30px 50px;
+  padding: 18px 20px 60px;
 }
 
 .projects__header {
+  display: contents;
   gap: 20px;
 }
 
@@ -1839,24 +1855,16 @@ textarea.form-control {
 }
 
 .projects__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-  padding-right: 20px;
+  margin: 20px 0 0 0;
 }
 
-.projects__title span {
-  text-indent: 2.6em;
+.projects__controls {
+  margin-top: 20px;
+  gap: 10px;
 }
 
 .projects__body {
   position: relative;
-  gap: 20px;
   margin: 25px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1865,6 +1873,7 @@ textarea.form-control {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 10px;
 }
 
 .projects__slider {
@@ -1874,7 +1883,7 @@ textarea.form-control {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-left: -10px;
+  margin-left: 10px;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   -o-transition: transform 0.5s ease-in-out;
@@ -1951,7 +1960,7 @@ textarea.form-control {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 480px;
-  padding: 15px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   border-radius: 20px;
 }
 
@@ -1964,16 +1973,16 @@ textarea.form-control {
 .projects__info-title {
   line-height: 120%;
   letter-spacing: -0.05em;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .projects__info-props {
-  margin-top: 16px;
   font-family: "SFUIDisplay";
   font-weight: 300;
   text-transform: uppercase;
-  gap: 24px;
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 12px;
+  gap: 7px;
 }
 
 .projects__info-price {
@@ -1982,16 +1991,17 @@ textarea.form-control {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: -0.05em;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .projects__info-btn {
   margin-top: 10px;
-  margin-left: auto;
+  font-size: 15px;
+  margin-right: auto;
 }
 
 .complex {
-  padding: 88px 0 40px;
+  padding: 58px 0 40px;
 }
 
 .complex__columns {
@@ -2003,11 +2013,11 @@ textarea.form-control {
 }
 
 .complex__caption {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 
 .complex__title {
-  margin-bottom: 46px;
+  margin-bottom: 22px;
 }
 
 .about {
@@ -3747,6 +3757,25 @@ textarea.form-control {
   }
 }
 
+@media (min-width: 379.98px) {
+  .title-lg {
+    font-size: 22px;
+  }
+
+  .promo__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media (min-width: 575.98px) {
   .container,
   .container-fluid,
@@ -3779,6 +3808,10 @@ textarea.form-control {
     margin-bottom: -70px;
   }
 
+  .header.header_offset .header__main {
+    padding: 0 15px;
+  }
+
   .header__logo {
     max-width: 105px;
   }
@@ -3796,6 +3829,7 @@ textarea.form-control {
   }
 
   .icon-menu {
+    margin: 0;
     height: 60px;
     width: 60px;
   }
@@ -3823,25 +3857,8 @@ textarea.form-control {
   .no-webp .promo__main {
     background: url("../img/banner.jpg") center 0/cover no-repeat, #303030; }
 
-  .promo__main {
-    color: #fff;
-    width: 100%;
-    padding: 20px;
-    min-height: 440px;
-  }
-
   .promo__title {
     padding-bottom: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 
   .promo__title span:first-child {
@@ -3852,7 +3869,12 @@ textarea.form-control {
     text-indent: 1.53125em;
   }
 
+  .promo__side {
+    margin-top: 0;
+  }
+
   .promo__side-link {
+    padding: 1.4444444444em 1.1111111111em 1.1111111111em 1.6666666667em;
     height: 11.1111111111em;
     width: 12.2222222222em;
     font-size: 12px;
@@ -3860,6 +3882,24 @@ textarea.form-control {
 
   .promo__side-link:nth-child(1) {
     background: transparent;
+  }
+
+  .benefits {
+    padding: 20px 0 0 0;
+  }
+
+  .benefits__cards .row {
+    --bs-gutter-y: 20px;
+  }
+
+  .benefits__card {
+    gap: 23px;
+  }
+
+  .categories__header-caption {
+    padding-top: 10px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
 
   .categories__header-title {
@@ -3896,6 +3936,35 @@ textarea.form-control {
     font-size: 22px;
   }
 
+  .projects {
+    padding: 20px 0 70px;
+  }
+
+  .projects__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    padding-right: 20px;
+  }
+
+  .projects__title span {
+    text-indent: 2.6em;
+  }
+
+  .projects__controls {
+    gap: 20px;
+    margin-top: 0;
+  }
+
+  .projects__body {
+    gap: 20px;
+  }
+
   .projects__slider {
     height: 288px;
   }
@@ -3908,6 +3977,23 @@ textarea.form-control {
   .projects__slide.active {
     width: 480px;
     height: 288px;
+  }
+
+  .projects__info-title {
+    font-size: 20px;
+  }
+
+  .projects__info-price {
+    font-size: 20px;
+  }
+
+  .projects__info-btn {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .complex {
+    padding: 88px 0 40px;
   }
 
   .complex__column:nth-child(5n+1),
@@ -3923,6 +4009,14 @@ textarea.form-control {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 300px;
             flex: 0 0 300px;
+  }
+
+  .complex__caption {
+    margin-bottom: 26px;
+  }
+
+  .complex__title {
+    margin-bottom: 46px;
   }
 
   .about__slider {
@@ -4248,6 +4342,8 @@ textarea.form-control {
   }
 
   .projects__info-props {
+    gap: 24px;
+    margin-top: 16px;
     font-size: 18px;
   }
 
@@ -4595,6 +4691,7 @@ textarea.form-control {
   }
 
   .promo__main {
+    padding: 20px;
     min-height: 540px;
   }
 
@@ -4917,7 +5014,6 @@ textarea.form-control {
   }
 
   .projects__controls {
-    gap: 20px;
     padding-bottom: 10px;
   }
 
@@ -5651,28 +5747,6 @@ textarea.form-control {
   }
 }
 
-@media (max-width: 1199.98px) {
-  .projects__prev {
-    position: absolute;
-    top: 35%;
-    left: 16px;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    z-index: 4;
-  }
-
-  .projects__next {
-    position: absolute;
-    top: 35%;
-    right: 16px;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    z-index: 4;
-  }
-}
-
 @media (max-width: 991.98px) {
   body.lock-menu {
     overflow: hidden;
@@ -5704,19 +5778,58 @@ textarea.form-control {
 }
 
 @media (max-width: 575.98px) {
-  .no-webp .promo__title {
-    background: url("../img/banner.jpg") center 0/cover no-repeat, #303030; }
-  .promo__title {
-    color: #fff;
-    width: 100%;
-    padding: 100px 20px 20px;
-    border-radius: 10px;
-    min-height: 240px;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-    -ms-flex-line-pack: end;
-        align-content: end;
+  .benefits__card-icon {
+    max-width: 40px;
+  }
+
+  .projects__prev {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+  }
+
+  .projects__next {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+  }
+
+  .projects__info-btn {
+    padding: 18px 28px;
+  }
+
+  .projects__info-btn::before {
+    padding: 14px;
+    margin: -18px -22px -18px 0;
+  }
+}
+
+@media (max-width: 575.98px) and (min-width: 379.98px) {
+  .promo__title span:first-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media (max-width: 1199.98px) and (min-width: 575.98px) {
+  .projects__prev {
+    position: absolute;
+    top: 35%;
+    left: 16px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 4;
+  }
+
+  .projects__next {
+    position: absolute;
+    top: 35%;
+    right: 16px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 4;
   }
 }
 
@@ -5858,12 +5971,9 @@ textarea.form-control {
   }
 }
 
+.webp .promo__main { background: url(../img/banner-mobile.webp) center 0/cover no-repeat, #303030; }
+
 @media (min-width: 575.98px) {
 
   .webp .promo__main { background: url(../img/banner.webp) center 0/cover no-repeat, #303030; }
-}
-
-@media (max-width: 575.98px) {
-
-  .webp .promo__title { background: url(../img/banner.webp) center 0/cover no-repeat, #303030; }
 }

@@ -8,7 +8,7 @@
 	will-change: padding;
 	contain: layout;
 	transform: translate3d(0, 0, -1px);
-	padding: 20px 0 0 0;
+	padding: 30px 0 0 0;
 	@media (min-width: $md4) {
 		padding: 40px 0 0 0;
 	}
@@ -33,7 +33,7 @@
 	}
 	&.header_offset {
 		transform: translate3d(0, 0px, -1px);
-		margin-bottom: -50px;
+		margin-bottom: -60px;
 		@media (min-width: $md5) {
 			margin-bottom: -70px;
 		}
@@ -46,7 +46,10 @@
 			margin-bottom: -110px;
 		}
 		.header__main {
-			padding: 0 15px;
+			padding: 0 20px;
+			@media (min-width: $md5) {
+				padding: 0 15px;
+			}
 			@media (min-width: $md0) {
 				padding: 0 25px;
 			}
@@ -66,7 +69,7 @@
 	}
 	// .header__logo
 	&__logo {
-		max-width: 65px;
+		max-width: 70px;
 		@media (min-width: $md5) {
 			max-width: 105px;
 		}
@@ -467,9 +470,11 @@
 	background: rgba($color: #fff, $alpha: 0.8);
 	color: $text;
 	z-index: 11;
-	width: 40px;
+	width: 80px;
 	height: 40px;
+	margin: 0px 0px 0px auto;
 	@media (min-width: $md5) {
+		margin: 0;
 		height: 60px;
 		width: 60px;
 	}
@@ -498,7 +503,7 @@
 			content: '';
 			display: block;
 			height: 2px;
-			width: 20px;
+			width: 40px;
 			@media (min-width: $md5) {
 				width: 30px;
 			}

@@ -401,7 +401,7 @@ $(function () {
             const windowWidth = $(window).width();
             switch (true) {
                 case (windowWidth < 576):
-                    return windowWidth - 2 * this.slideMargin;
+                    return windowWidth - 2 * this.slideMargin - 20;
                 case (windowWidth < 768):
                     return 240;
                 case (windowWidth < 992):
