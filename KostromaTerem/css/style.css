@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "SFUIDisplay";
+  font-display: swap;
+  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
@@ -9,16 +17,8 @@
 @font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SFUIDisplay";
-  font-display: swap;
-  src: url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -33,8 +33,8 @@
 @font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
-  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -47,18 +47,18 @@
 }
 
 @font-face {
-  font-family: "Unbounded";
-  font-display: swap;
-  src: url("../fonts/Unbounded-Medium.woff2") format("woff2"), url("../fonts/Unbounded-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "SFUIDisplay";
   font-display: swap;
   src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  font-display: swap;
+  src: url("../fonts/Unbounded-Medium.woff2") format("woff2"), url("../fonts/Unbounded-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -1563,7 +1563,7 @@ textarea.form-control {
 }
 
 .footer__logo {
-  max-width: 80px;
+  max-width: 140px;
 }
 
 .footer__prod {
@@ -4365,27 +4365,6 @@ textarea.form-control {
     font-size: 21px;
   }
 
-  .footer__column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .footer__logo {
-    max-width: 140px;
-  }
-
-  .footer__prod {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    margin-top: auto;
-  }
-
   .footer__menu-caption {
     font-size: 24px;
   }
@@ -4493,6 +4472,9 @@ textarea.form-control {
 
   .about__slider .slick-track {
     gap: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .about__slider .slick-track > *:nth-child(5n+1) {
@@ -4849,6 +4831,23 @@ textarea.form-control {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 44%;
             flex: 0 0 44%;
+  }
+
+  .footer__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__prod {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-top: auto;
   }
 
   .promo__main {
@@ -5920,6 +5919,10 @@ textarea.form-control {
     margin: 0 -60px 0px;
   }
 
+  .footer__logo {
+    margin: 0 auto 14px;
+  }
+
   .complectation__option {
     border-radius: 30px;
     padding: 10px 20px;
@@ -5934,11 +5937,6 @@ textarea.form-control {
 
   .footer__contacts-caption {
     text-align: center;
-  }
-
-  .footer__logo {
-    margin: 0 auto 14px;
-    max-width: 140px;
   }
 
   .footer__menu-item {
