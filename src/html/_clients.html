@@ -10,14 +10,14 @@
                 <div class="col-md-9">
                     <h2 class="clients__title title">
                         Что о нас
-                        <span>говорят клиенты</span>
+                        <span>говорят&nbsp;клиенты</span>
                     </h2>
                 </div>
             </div>
         </div>
         <div class="clients__body">
             <div class="row">
-                <div class="col-lg-3 order-lg-0 order-1">
+                <div class="col-lg-3 order-lg-0 order-2">
                     <div class="clients__controls active">
                         <span role="button" class="clients__videos-prev slick-arrow slick-prev"></span>
                         <span role="button" class="clients__videos-next slick-arrow slick-next"></span>
@@ -28,9 +28,15 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="clients__tabs d-flex text-center ">
+                    <div class="clients__tabs d-sm-flex text-center d-none">
                         <span role="button" class="clients__tabs-btn active">видео отзывы</span>
                         <span role="button" class="clients__tabs-btn">фото отзывы</span>
+                    </div>
+                    <div class="clients__select select d-sm-none">
+                        <select class="clients-slider-toggler">
+                            <option value="0">видео отзывы</option>
+                            <option value="1">фото отзывы</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-12 order-1">

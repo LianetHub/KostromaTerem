@@ -138,14 +138,32 @@ $(function () {
 
         // clients tabs
         if ($target.is('.clients__tabs-btn')) {
-            $target.addClass('active').siblings().removeClass('active');
-            $('.clients__tabs-content').eq($target.index()).addClass('active').siblings().removeClass('active');
-            $('.clients__controls').eq($target.index()).addClass('active').siblings().removeClass('active');
-            $('.clients-slider.slick-initialized').slick("setPosition");
+            let index = $target.index();
+            updateClientsTabs(index);
         }
 
 
     });
+
+    if ($(".clients-slider-toggler").length > 0) {
+        $(".clients-slider-toggler").on('change', (e) => {
+            let index = $(e.target).val();
+            updateClientsTabs(index);
+        })
+    }
+
+
+
+    function updateClientsTabs(index) {
+        $('.clients__tabs-btn').eq(index).addClass('active').siblings().removeClass('active');
+        $('.clients__tabs-content').eq(index).addClass('active').siblings().removeClass('active');
+        $('.clients__controls').eq(index).addClass('active').siblings().removeClass('active');
+        $('.clients-slider-toggler').val(index);
+        $('.clients-slider.slick-initialized').slick("setPosition");
+    }
+
+
+
 
 
     // fancybox settings
@@ -237,20 +255,12 @@ $(function () {
     // sliders
 
     if ($('.about__slider').length > 0) {
-        $('.about__slider').slick({
+
+        getDesktopSlick('.about__slider', {
             infinite: true,
             variableWidth: true,
             arrows: false,
             autoplay: true,
-            responsive: [
-                {
-                    breakpoint: 576,
-                    settings: {
-                        variableWidth: false,
-                        slidesToShow: 1,
-                    }
-                }
-            ]
         });
     }
 
@@ -470,6 +480,26 @@ $(function () {
                 $('.projects__info').eq(slider.currentIndex).addClass("active");
             }
         });
+    }
+
+    // mobile slick
+    function getDesktopSlick(sliderName, options) {
+        let init = false;
+
+        function initSlick() {
+            if (window.innerWidth >= 768) {
+                if (!init) {
+                    $(sliderName).slick(options);
+                    init = true;
+                }
+            } else if (init) {
+                $(sliderName).slick('unslick');
+                init = false;
+            }
+        }
+
+        initSlick();
+        window.addEventListener('resize', initSlick);
     }
 
 

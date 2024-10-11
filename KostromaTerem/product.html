@@ -867,7 +867,7 @@
                                 <div class="steps__caption caption">[ порядок работы ]</div>
                             </div>
                             <div class="col-lg-9">
-                                <h2 class="steps__title title"> Всего за 6 шагов у вас <span>появится свой дом</span>
+                                <h2 class="steps__title title"> Всего за 6 шагов у&nbsp;вас <span>появится свой дом</span>
                                 </h2>
                             </div>
                         </div>
@@ -926,8 +926,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
-                                <ul class="steps__list">
+                            <div class="col-xl-4 col-12 order-xl-0 order-first">
+                                <div class="steps__select select d-sm-none">
+                                    <select>
+                                        <option value="1">Выбор проекта</option>
+                                        <option value="2">Заключение договора</option>
+                                        <option value="3">Производство комплекта</option>
+                                        <option value="4">Доставка и сборка</option>
+                                        <option value="5">Усадка</option>
+                                    </select>
+                                </div>
+                                <ul class="steps__list d-sm-block d-none">
                                     <li class="steps__item">
                                         <a href="" class="steps__link d-flex align-items-center">
                                             <span class="steps__icon">
@@ -1156,14 +1165,14 @@
                                 <div class="clients__caption caption"> [ отзывы ] </div>
                             </div>
                             <div class="col-md-9">
-                                <h2 class="clients__title title"> Что о нас <span>говорят клиенты</span>
+                                <h2 class="clients__title title"> Что о нас <span>говорят&nbsp;клиенты</span>
                                 </h2>
                             </div>
                         </div>
                     </div>
                     <div class="clients__body">
                         <div class="row">
-                            <div class="col-lg-3 order-lg-0 order-1">
+                            <div class="col-lg-3 order-lg-0 order-2">
                                 <div class="clients__controls active">
                                     <span role="button" class="clients__videos-prev slick-arrow slick-prev"></span>
                                     <span role="button" class="clients__videos-next slick-arrow slick-next"></span>
@@ -1174,9 +1183,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-9">
-                                <div class="clients__tabs d-flex text-center ">
+                                <div class="clients__tabs d-sm-flex text-center d-none">
                                     <span role="button" class="clients__tabs-btn active">видео отзывы</span>
                                     <span role="button" class="clients__tabs-btn">фото отзывы</span>
+                                </div>
+                                <div class="clients__select select d-sm-none">
+                                    <select class="clients-slider-toggler">
+                                        <option value="0">видео отзывы</option>
+                                        <option value="1">фото отзывы</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-12 order-1">
@@ -1513,7 +1528,7 @@
                     <div class="footer__feedback-main">
                         <h2 class="footer__feedback-title title"> Заказать <span>обратный звонок</span>
                         </h2>
-                        <p class="footer__feedback-subtitle">Оставьте свои контктные данные и наш специалист перезвонит Вам в течение 15-ти минут</p>
+                        <p class="footer__feedback-subtitle">Оставьте свои контктные данные и&nbsp;наш специалист перезвонит Вам&nbsp;в течение 15-ти минут</p>
                         <div role="form" class="footer__form d-flex flex-column">
                             <div class="form-wrapper icon-user">
                                 <input type="text" name="name" class="form-control" placeholder="Ваше имя">
@@ -1525,7 +1540,7 @@
                             <div class="footer__form-privacy text-center"> Нажимая кнопку «Заказать обратный звонок», Вы даете согласие на обработку своих персональных данных. </div>
                         </div>
                     </div>
-                    <div class="footer__feedback-image d-lg-block d-none">
+                    <div class="footer__feedback-image ">
                         <picture>
                             <source srcset="img/feedback.webp" type="image/webp"><img src="img/feedback.png" alt="Изображение дома">
                         </picture>
@@ -1565,7 +1580,7 @@
                     </div>
                 </div>
                 <div class="footer__bottom d-flex flex-lg-row flex-column">
-                    <div class="footer__column d-flex flex-lg-column flex-row order-lg-0 order-last justify-content-between mt-lg-0 mt-4">
+                    <div class="footer__column">
                         <a href="/" class="footer__logo">
                             <picture>
                                 <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип">
@@ -1577,7 +1592,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-12">
-                            <div class="footer__menu">
+                            <div class="footer__menu d-flex flex-column align-content-lg-stretch align-items-center">
                                 <div class="footer__menu-caption">Строительство</div>
                                 <nav class="footer__menu-nav">
                                     <ul class="footer__menu-list row">
@@ -1594,7 +1609,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="footer__menu">
+                            <div class="footer__menu d-flex flex-column align-content-lg-stretch align-items-center">
                                 <div class="footer__menu-caption">Компания</div>
                                 <nav class="footer__menu-nav">
                                     <ul class="footer__menu-list row">
@@ -1607,7 +1622,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="footer__menu">
+                            <div class="footer__menu d-flex flex-column align-content-lg-stretch align-items-center">
                                 <div class="footer__menu-caption">Соц. сети</div>
                                 <div class="footer__socials socials ">
                                     <a href="" class="socials__item icon-whatsapp"></a>
